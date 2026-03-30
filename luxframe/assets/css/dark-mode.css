@@ -1,0 +1,61 @@
+:root[data-theme="dark"]{
+  --bg:#0A0A0F;
+  --fg:var(--white);
+  --shadow:0 20px 70px rgba(0,0,0,.5);
+}
+
+:root[data-theme="dark"] .site-header{
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  border-bottom:1px solid color-mix(in srgb, var(--white) 14%, transparent);
+}
+
+:root[data-theme="dark"] .site-nav a,
+:root[data-theme="dark"] .auth-link,
+:root[data-theme="dark"] .icon-btn,
+:root[data-theme="dark"] .chip-btn,
+:root[data-theme="dark"] .back-to-top,
+:root[data-theme="dark"] .social-row a{
+  color:var(--white);
+  border-color:color-mix(in srgb, var(--white) 18%, transparent);
+}
+
+:root[data-theme="dark"] .surface,
+:root[data-theme="dark"] .milestone,
+:root[data-theme="dark"] .service-tile,
+:root[data-theme="dark"] .post-row,
+:root[data-theme="dark"] .price-card,
+:root[data-theme="dark"] .contrast-panel.no-design{
+  background:color-mix(in srgb, var(--white) 6%, transparent);
+  border-color:color-mix(in srgb, var(--white) 16%, transparent);
+}
+
+:root[data-theme="dark"] .cue-sheet{
+  border-color:color-mix(in srgb, var(--white) 16%, transparent);
+}
+:root[data-theme="dark"] .cue-sheet thead th{
+  background:color-mix(in srgb, var(--white) 8%, transparent);
+  border-bottom:1px solid color-mix(in srgb, var(--white) 16%, transparent);
+}
+:root[data-theme="dark"] .cue-sheet tbody td{
+  border-bottom:1px solid color-mix(in srgb, var(--white) 14%, transparent);
+}
+
+:root[data-theme="dark"] .form-control,
+:root[data-theme="dark"] .form-select{
+  background:color-mix(in srgb, var(--white) 6%, transparent);
+  border-color:color-mix(in srgb, var(--white) 18%, transparent);
+  color:var(--white);
+}
+
+:root[data-theme="dark"] .btn-close{filter:invert(1) grayscale(1);}
+
+:root[data-theme="dark"] .accordion{
+  --bs-accordion-border-color: color-mix(in srgb, var(--white) 16%, transparent);
+  --bs-accordion-btn-color: var(--white);
+  --bs-accordion-active-color: var(--white);
+}
+:root[data-theme="dark"] .accordion-item{
+  border-color:color-mix(in srgb, var(--white) 16%, transparent);
+  background:color-mix(in srgb, var(--white) 6%, transparent);
+}
+:root[data-theme="dark"] .accordion-button::after{filter:grayscale(1) brightness(1.8);}

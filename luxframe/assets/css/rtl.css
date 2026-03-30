@@ -1,0 +1,15 @@
+[dir="rtl"] body{direction:rtl;}
+
+[dir="rtl"] .kicker::before{margin-inline-start:0;margin-inline-end:0;}
+
+[dir="rtl"] .site-nav{justify-content:center;}
+
+[dir="rtl"] .offcanvas .nav-link{text-align:start;}
+
+[dir="rtl"] .cue-sheet thead th,
+[dir="rtl"] .cue-sheet tbody td{
+  text-align:start;
+}
+
+[dir="rtl"] .note:nth-child(1){transform:rotate(.6deg);}
+[dir="rtl"] .note:nth-child(2){transform:rotate(-.8deg);}

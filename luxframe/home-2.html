@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark" data-accent="gold">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LuxFrame — Behind the Rig</title>
+    <meta
+      name="description"
+      content="A behind-the-scenes look at LuxFrame’s lighting workflow: equipment choices, cue process, and genre versatility."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/images/luxframe-logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="assets/css/rtl.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Behind the Rig",
+        "url": "https://luxframe.example/home-2.html",
+        "isPartOf": { "@type": "WebSite", "name": "LuxFrame", "url": "https://luxframe.example/" }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container-fluid px-3 px-md-4">
+        <div class="header-inner">
+          <button
+            class="icon-btn d-1100-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navOffcanvas"
+            aria-controls="navOffcanvas"
+            aria-label="Open menu"
+          >
+            <i class="bi bi-list fs-4" aria-hidden="true"></i>
+          </button>
+
+          <a class="brand" href="index.html" aria-label="LuxFrame Home">
+            <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
+          </a>
+
+          <nav class="site-nav d-1100-flex" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="index.html#portfolio">Portfolio</a>
+            <a href="index.html#productions">Productions</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <div class="d-none d-md-flex align-items-center gap-2">
+              <a class="auth-link" href="coming-soon.html">Login</a>
+              <span aria-hidden="true">/</span>
+              <a class="auth-link" href="coming-soon.html">Register</a>
+            </div>
+            <button class="icon-btn" type="button" data-action="toggle-theme">
+              <i class="bi bi-sun fs-5" aria-hidden="true"></i>
+            </button>
+            <button class="chip-btn d-none d-md-inline-flex" type="button" data-action="toggle-dir">
+              RTL
+            </button>
+            <button class="chip-btn d-none d-md-inline-flex" type="button" data-action="toggle-accent">
+              Gold
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title h5 m-0" id="navOffcanvasLabel">LuxFrame</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav class="nav flex-column" aria-label="Mobile">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+            <a class="nav-link" href="index.html#productions">Productions</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+          <div class="offcanvas-actions">
+            <a class="chip-btn" href="coming-soon.html">Login</a>
+            <a class="chip-btn" href="coming-soon.html">Register</a>
+            <button class="chip-btn" type="button" data-action="toggle-dir">RTL</button>
+            <button class="chip-btn" type="button" data-action="toggle-accent">Gold</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Behind the Rig</div>
+            <h1 class="mb-2">Before the cue fires, the rig is already telling the story.</h1>
+            <p class="mb-0">
+              Equipment choices, plot logic, and programming discipline—so when the moment arrives, the light lands
+              exactly where it should.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Equipment Showcase</div>
+            <h2>Tools of the mood.</h2>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div class="surface p-4 h-100">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-btn" aria-hidden="true"><i class="bi bi-gear-wide-connected"></i></div>
+                  <div>
+                    <h3 class="h4 mb-2">Moving Heads</h3>
+                    <p class="mb-2">Fast focus shifts, sculpted beams, and precise transitions between looks.</p>
+                    <div class="mono">Example: Martin MAC / Robe</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="surface p-4 h-100">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-btn" aria-hidden="true"><i class="bi bi-bounding-box-circles"></i></div>
+                  <div>
+                    <h3 class="h4 mb-2">Ellipsoidals</h3>
+                    <p class="mb-2">Hard-edged story light with shutters, gobos, and sharp intent.</p>
+                    <div class="mono">Example: ETC Source Four</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="surface p-4 h-100">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-btn" aria-hidden="true"><i class="bi bi-brightness-high"></i></div>
+                  <div>
+                    <h3 class="h4 mb-2">LED Wash</h3>
+                    <p class="mb-2">A wide palette without muddying the scene—clean saturation, controlled softness.</p>
+                    <div class="mono">Example: Chauvet / ETC</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="surface p-4 h-100">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-btn" aria-hidden="true"><i class="bi bi-cloud-haze2"></i></div>
+                  <div>
+                    <h3 class="h4 mb-2">Haze &amp; Atmospherics</h3>
+                    <p class="mb-2">Air as a canvas—beam readability, depth separation, and subtle bloom.</p>
+                    <div class="mono">Example: DF-50 / MDG</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Process</div>
+            <h2>From script to stage.</h2>
+          </div>
+
+          <div class="row g-3 align-items-stretch">
+            <div class="col-12 col-lg-6">
+              <div class="surface p-4 h-100">
+                <div class="kicker mb-2">Phase 1</div>
+                <h3 class="h4">Read the Script</h3>
+                <p class="mb-0">
+                  Identify the emotional beats: silence, reveal, confrontation, relief—then define the lighting
+                  vocabulary that supports them.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="surface p-4 h-100">
+                <div class="kicker mb-2">Phase 2</div>
+                <h3 class="h4">Design the Plot</h3>
+                <p class="mb-0">
+                  Build focus architecture: angles, zones, and practical logic. Every fixture has a narrative job.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="surface p-4 h-100">
+                <div class="kicker mb-2">Phase 3</div>
+                <h3 class="h4">Program the Cues</h3>
+                <p class="mb-0">
+                  Timing is writing. Fade curves and snap decisions become rhythm—clean programming, no surprises.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="surface p-4 h-100">
+                <div class="kicker mb-2">Phase 4</div>
+                <h3 class="h4">Tech Rehearsal</h3>
+                <p class="mb-0">
+                  Refine focus, protect skin tones, eliminate spill, and lock the final cue stack with the director’s
+                  intent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Genre Versatility</div>
+            <h2>Same discipline. Different worlds.</h2>
+          </div>
+
+          <div class="tag-cloud" aria-label="Genres">
+            <div class="tag"><span>Shakespeare</span></div>
+            <div class="tag"><span>Immersive Theatre</span></div>
+            <div class="tag"><span>Horror Film</span></div>
+            <div class="tag"><span>Contemporary Dance</span></div>
+            <div class="tag"><span>Opera</span></div>
+            <div class="tag"><span>Music Video</span></div>
+            <div class="tag"><span>Fashion Show</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Blog Preview</div>
+            <h2>Notes from the console.</h2>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-12 col-lg-6">
+              <article class="post-row h-100">
+                <div class="meta">Technique • 6 min</div>
+                <h3 class="h4">Fade Curves: The difference between “smooth” and “alive”</h3>
+                <p class="mb-0">
+                  How linear fades flatten emotion—and why your crossfades should breathe like the scene.
+                </p>
+                <div class="mt-3">
+                  <a class="btn btn-accent" href="blog-details.html">Read Article</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-6">
+              <article class="post-row h-100">
+                <div class="meta">Gear Reviews • 5 min</div>
+                <h3 class="h4">Haze, not smoke: beam readability without choking the stage</h3>
+                <p class="mb-0">
+                  Atmospherics as a precision tool—placement, density, and how to keep faces clean.
+                </p>
+                <div class="mt-3">
+                  <a class="btn btn-accent" href="blog-details.html">Read Article</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-band">
+        <div class="container container-max">
+          <h2>Every stage is a blank canvas. Let’s paint it with light.</h2>
+          <p>
+            Email
+            <a href="mailto:hello@luxframe.example">hello@luxframe.example</a>
+            or share your dates and venue details.
+          </p>
+          <div class="mt-3 d-flex flex-wrap gap-2">
+            <a class="btn btn-solid" href="contact.html">Discuss Your Production</a>
+            <a class="btn btn-accent" href="services.html">Explore Services</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container container-max">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
+            </div>
+            <p class="mt-3 mb-0">
+              Lighting design for theatre and film—built from cue discipline, story clarity, and control of shadow.
+            </p>
+            <div class="social-row" aria-label="Social links">
+              <a href="coming-soon.html" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+              <a href="coming-soon.html" aria-label="Vimeo"><i class="bi bi-vimeo" aria-hidden="true"></i></a>
+              <a href="coming-soon.html" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-title">Productions</div>
+            <div class="footer-links">
+              <a href="index.html#portfolio">Production Reel</a>
+              <a href="index.html#productions">Cue Sheet</a>
+              <a href="services.html">Design Services</a>
+              <a href="pricing.html">Rates</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-title">Resources</div>
+            <div class="footer-links">
+              <a href="blog.html">Blog</a>
+              <a href="service-details.html">Workflow</a>
+              <a href="about.html">Timeline</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-title">Newsletter</div>
+            <form class="needs-validation" novalidate>
+              <label class="form-label" for="newsletterEmail">Monthly cue notes, no spam.</label>
+              <div class="d-flex gap-2 flex-wrap">
+                <input
+                  class="form-control flex-grow-1"
+                  id="newsletterEmail"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="you@example.com"
+                />
+                <button class="btn btn-solid" type="submit">Sign Up</button>
+              </div>
+              <div class="invalid-feedback mt-2">Enter a valid email to subscribe.</div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© 2026 LuxFrame. All rights reserved.</div>
+          <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">
+            <i class="bi bi-arrow-up" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
