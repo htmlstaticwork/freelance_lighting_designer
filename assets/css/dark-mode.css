@@ -47,6 +47,10 @@
   color:var(--white);
 }
 
+:root[data-theme="dark"] .text-muted{
+  color:color-mix(in srgb, var(--white) 70%, transparent) !important;
+}
+
 :root[data-theme="dark"] .btn-close{filter:invert(1) grayscale(1);}
 
 :root[data-theme="dark"] .accordion{

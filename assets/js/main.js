@@ -1,8 +1,8 @@
 (() => {
   const storageKeys = {
-    theme: "luxframe.theme",
-    dir: "luxframe.dir",
-    accent: "luxframe.accent",
+    theme: "luxframe-theme",
+    accent: "luxframe-accent",
+    dir: "luxframe-dir",
   };
 
   const qs = (sel, root = document) => root.querySelector(sel);
@@ -16,7 +16,7 @@
     const offcanvas = qs("#navOffcanvas");
     if (!offcanvas) return;
     offcanvas.classList.remove("offcanvas-start", "offcanvas-end");
-    offcanvas.classList.add(dir === "rtl" ? "offcanvas-end" : "offcanvas-start");
+    offcanvas.classList.add(dir === "rtl" ? "offcanvas-start" : "offcanvas-end");
   };
 
   const applyPreferences = () => {
@@ -32,65 +32,45 @@
 
     setOffcanvasPlacementForDir(dir);
 
-    const themeBtn = qs("[data-action='toggle-theme']");
-    if (themeBtn) {
-      const nextLabel = theme === "dark" ? "Light" : "Dark";
-      themeBtn.setAttribute("aria-label", `Switch to ${nextLabel} theme`);
-      themeBtn.setAttribute("data-state", theme);
-      const icon = themeBtn.querySelector("i");
+    const combinedBtns = qsa("[data-action='toggle-combined']");
+    combinedBtns.forEach((btn) => {
+      const nextTheme = theme === "dark" ? "Light" : "Dark";
+      const nextAccent = accent === "gold" ? "Neon" : "Gold";
+      
+      const icon = btn.querySelector("i");
+      
       if (icon) {
-        icon.className = theme === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+        icon.className = theme === "dark" ? "bi bi-moon-stars fs-5" : "bi bi-sun fs-5";
       }
-    }
-
-    const dirBtn = qs("[data-action='toggle-dir']");
-    if (dirBtn) {
-      dirBtn.textContent = dir === "rtl" ? "LTR" : "RTL";
-      dirBtn.setAttribute(
-        "aria-label",
-        dir === "rtl" ? "Switch to left-to-right" : "Switch to right-to-left",
-      );
-      dirBtn.setAttribute("data-state", dir);
-    }
-
-    const accentBtn = qs("[data-action='toggle-accent']");
-    if (accentBtn) {
-      accentBtn.textContent = accent === "gold" ? "Gold" : "Neon";
-      accentBtn.setAttribute(
-        "aria-label",
-        accent === "gold" ? "Switch accent to neon blue" : "Switch accent to warm gold",
-      );
-      accentBtn.setAttribute("data-state", accent);
-    }
+      
+      btn.setAttribute("aria-label", `Switch to ${nextTheme} ${nextAccent}`);
+    });
   };
 
   const wireToggles = () => {
-    const themeBtn = qs("[data-action='toggle-theme']");
-    if (themeBtn) {
-      themeBtn.addEventListener("click", () => {
-        const current = localStorage.getItem(storageKeys.theme) || "dark";
-        localStorage.setItem(storageKeys.theme, current === "dark" ? "light" : "dark");
+    const combinedBtns = qsa("[data-action='toggle-combined']");
+    combinedBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const currentTheme = localStorage.getItem(storageKeys.theme) || "dark";
+        const currentAccent = localStorage.getItem(storageKeys.accent) || "gold";
+        
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        const newAccent = currentAccent === "gold" ? "neon" : "gold";
+        
+        localStorage.setItem(storageKeys.theme, newTheme);
+        localStorage.setItem(storageKeys.accent, newAccent);
         applyPreferences();
       });
-    }
+    });
 
-    const dirBtn = qs("[data-action='toggle-dir']");
-    if (dirBtn) {
-      dirBtn.addEventListener("click", () => {
+    const dirBtns = qsa("[data-action='toggle-dir']");
+    dirBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
         const current = localStorage.getItem(storageKeys.dir) || "ltr";
         localStorage.setItem(storageKeys.dir, current === "rtl" ? "ltr" : "rtl");
         applyPreferences();
       });
-    }
-
-    const accentBtn = qs("[data-action='toggle-accent']");
-    if (accentBtn) {
-      accentBtn.addEventListener("click", () => {
-        const current = localStorage.getItem(storageKeys.accent) || "gold";
-        localStorage.setItem(storageKeys.accent, current === "gold" ? "neon" : "gold");
-        applyPreferences();
-      });
-    }
+    });
   };
 
   const blackoutReveal = () => {
@@ -234,6 +214,37 @@
     window.setInterval(tick, 1000);
   };
 
+  const wireScrollSpy = () => {
+    const sections = qsa("section[id]");
+    const navLinks = qsa(".site-nav a");
+    const mobileLinks = qsa(".offcanvas-body .nav-link");
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "-20% 0px -70% 0px",
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          
+          [...navLinks, ...mobileLinks].forEach((link) => {
+            const href = link.getAttribute("href");
+            if (href === `#${id}`) {
+              link.classList.add("is-active");
+            } else {
+              link.classList.remove("is-active");
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => observer.observe(section));
+  };
+
   document.addEventListener("DOMContentLoaded", () => {
     applyPreferences();
     wireToggles();
@@ -242,5 +253,6 @@
     wireFormValidation();
     wireBlogSearchAndFilter();
     wireCountdown();
+    wireScrollSpy();
   });
 })();

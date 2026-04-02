@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blackout — Cue Not Found (404) | LuxFrame</title>
     <meta name="description" content="This page is in blackout. Cue not found. Return to LuxFrame home." />
-    <link rel="icon" type="image/svg+xml" href="assets/images/luxframe-logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,17 +34,6 @@
     <header class="site-header">
       <div class="container-fluid px-3 px-md-4">
         <div class="header-inner">
-          <button
-            class="icon-btn d-1100-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navOffcanvas"
-            aria-controls="navOffcanvas"
-            aria-label="Open menu"
-          >
-            <i class="bi bi-list fs-4" aria-hidden="true"></i>
-          </button>
-
           <a class="brand" href="index.html" aria-label="LuxFrame Home">
             <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
           </a>
@@ -60,24 +49,31 @@
 
           <div class="header-actions">
             <div class="d-none d-md-flex align-items-center gap-2">
-              <a class="auth-link" href="coming-soon.html">Login</a>
+              <a class="auth-link" href="login.html">Login</a>
               <span aria-hidden="true">/</span>
-              <a class="auth-link" href="coming-soon.html">Register</a>
+              <a class="auth-link" href="register.html">Register</a>
             </div>
-            <button class="icon-btn" type="button" data-action="toggle-theme">
-              <i class="bi bi-sun fs-5" aria-hidden="true"></i>
+            <button class="icon-btn" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
+              <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
             </button>
             <button class="chip-btn d-none d-md-inline-flex" type="button" data-action="toggle-dir">
               RTL
             </button>
-            <button class="chip-btn d-none d-md-inline-flex" type="button" data-action="toggle-accent">
-              Gold
+            <button
+              class="icon-btn d-1100-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navOffcanvas"
+              aria-controls="navOffcanvas"
+              aria-label="Open menu"
+            >
+              <i class="bi bi-list fs-4" aria-hidden="true"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
         <div class="offcanvas-header">
           <h2 class="offcanvas-title h5 m-0" id="navOffcanvasLabel">LuxFrame</h2>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -92,10 +88,12 @@
             <a class="nav-link" href="contact.html">Contact</a>
           </nav>
           <div class="offcanvas-actions">
-            <a class="chip-btn" href="coming-soon.html">Login</a>
-            <a class="chip-btn" href="coming-soon.html">Register</a>
+            <a class="chip-btn" href="login.html">Login</a>
+            <a class="chip-btn" href="register.html">Register</a>
+            <button class="icon-btn" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
+              <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
+            </button>
             <button class="chip-btn" type="button" data-action="toggle-dir">RTL</button>
-            <button class="chip-btn" type="button" data-action="toggle-accent">Gold</button>
           </div>
         </div>
       </div>
