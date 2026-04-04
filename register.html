@@ -46,11 +46,11 @@
         margin: 0 auto 32px;
         width: fit-content;
         background: var(--white);
-        padding: 8px 16px;
+        padding: 6px 12px;
         border-radius: 8px;
       }
       .auth-logo img {
-        height: 48px;
+        height: 40px;
         width: auto;
       }
     </style>
@@ -70,58 +70,75 @@
         
         <div class="auth-container">
           <div class="auth-card">
-            <a href="index.html" class="auth-logo" aria-label="LuxFrame Home">
-              <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
-            </a>
             
             <div class="surface p-4 p-md-5">
-              <div class="text-center mb-4">
-                <div class="kicker mb-2">Join</div>
-                <h1 class="h3">Create an Account</h1>
-                <p class="small text-muted">Join the production list and manage your lighting cues.</p>
-              </div>
+              <a href="index.html" class="auth-logo mb-4" aria-label="LuxFrame Home">
+                <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
+              </a>
 
               <form class="needs-validation" novalidate>
-                <div class="row g-3 mb-3">
-                  <div class="col-sm-6">
-                    <label for="regFirstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="regFirstName" required placeholder="John">
-                    <div class="invalid-feedback">First name is required.</div>
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="regLastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="regLastName" required placeholder="Doe">
-                    <div class="invalid-feedback">Last name is required.</div>
-                  </div>
+                <div class="mb-3">
+                  <label for="regName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="regName" required placeholder="John Doe">
+                  <div class="invalid-feedback">Full name is required.</div>
                 </div>
 
                 <div class="mb-3">
                   <label for="regEmail" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="regEmail" required placeholder="name@example.com">
+                  <input type="email" class="form-control" id="regEmail">
                   <div class="invalid-feedback">Please provide a valid email.</div>
                 </div>
                 
                 <div class="mb-3">
                   <label for="regPassword" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="regPassword" required placeholder="••••••••" minlength="8">
-                  <div class="invalid-feedback">Password must be at least 8 characters.</div>
+                  <div class="input-group">
+                    <input type="password" class="form-control" id="regPassword" minlength="10">
+                    <button class="btn btn-outline-secondary border-start-0 toggle-password" type="button" data-target="#regPassword" style="border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-color: color-mix(in srgb, var(--fg) 16%, transparent); background: var(--bg); color: var(--fg);">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                    <div class="invalid-feedback">Password must be at least 10 characters.</div>
+                  </div>
                 </div>
 
                 <div class="mb-4">
                   <label for="regPasswordConfirm" class="form-label">Confirm Password</label>
-                  <input type="password" class="form-control" id="regPasswordConfirm" required placeholder="••••••••">
-                  <div class="invalid-feedback">Please confirm your password.</div>
+                  <div class="input-group">
+                    <input type="password" class="form-control" id="regPasswordConfirm">
+                    <button class="btn btn-outline-secondary border-start-0 toggle-password" type="button" data-target="#regPasswordConfirm" style="border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-color: color-mix(in srgb, var(--fg) 16%, transparent); background: var(--bg); color: var(--fg);">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                    <div class="invalid-feedback">Please confirm your password.</div>
+                  </div>
                 </div>
 
-                <div class="mb-4 form-check">
+                <div class="mb-4 form-check text-start">
                   <input type="checkbox" class="form-check-input" id="terms" required>
-                  <label class="form-check-label small" for="terms">I agree to the <a href="#" class="text-accent">Terms of Service</a> and <a href="#" class="text-accent">Privacy Policy</a></label>
+                  <label class="form-check-label small" for="terms">I agree to the <a href="#" class="text-accent">Terms</a> and <a href="#" class="text-accent">Privacy</a></label>
                   <div class="invalid-feedback">You must agree to the terms.</div>
                 </div>
 
-                <button type="submit" class="btn btn-solid w-100 mb-3">Create Account</button>
+                <button type="submit" class="btn btn-solid w-100 mb-4">Create Account</button>
                 
-                <div class="text-center">
+                <div class="text-center mb-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <hr class="flex-grow-1 my-0 opacity-25">
+                    <span class="mx-3 small text-muted">Or continue with</span>
+                    <hr class="flex-grow-1 my-0 opacity-25">
+                  </div>
+                  <div class="social-row justify-content-center mt-0 pt-1">
+                    <a href="#" aria-label="Sign up with Google">
+                      <i class="bi bi-google"></i>
+                    </a>
+                    <a href="#" aria-label="Sign up with Facebook">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Sign up with Apple">
+                      <i class="bi bi-apple"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
                   <p class="small mb-0">Already have an account? <a href="login.html" class="text-accent">Login here</a></p>
                 </div>
               </form>
@@ -141,6 +158,22 @@
     <script>
       (() => {
         'use strict'
+
+        // Password visibility toggle
+        const toggleButtons = document.querySelectorAll('.toggle-password');
+        toggleButtons.forEach(btn => {
+          btn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const input = document.querySelector(targetId);
+            if (input) {
+              const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+              input.setAttribute('type', type);
+              this.querySelector('i').classList.toggle('bi-eye');
+              this.querySelector('i').classList.toggle('bi-eye-slash');
+            }
+          });
+        });
+
         const forms = document.querySelectorAll('.needs-validation')
         Array.from(forms).forEach(form => {
           form.addEventListener('submit', event => {

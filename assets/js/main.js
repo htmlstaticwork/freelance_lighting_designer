@@ -76,16 +76,24 @@
   const blackoutReveal = () => {
     const stage = qs("[data-blackout-stage]");
     if (!stage) return;
-    if (prefersReducedMotion()) {
-      stage.classList.add("is-revealed");
-      return;
-    }
-    window.setTimeout(() => stage.classList.add("is-revealed"), 1500);
+    stage.classList.add("is-revealed");
   };
 
   const wireBackToTop = () => {
     const btn = qs("[data-back-to-top]");
     if (!btn) return;
+    
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        btn.classList.add("show");
+      } else {
+        btn.classList.remove("show");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check initial state
+
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? "auto" : "smooth" });
@@ -214,14 +222,57 @@
     window.setInterval(tick, 1000);
   };
 
+  const wireSmoothScroll = () => {
+    const links = qsa('a');
+    links.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (!href || href === "#") return;
+
+      const url = new URL(link.href, window.location.href);
+      const isSamePage = url.pathname === window.location.pathname && 
+                        url.hostname === window.location.hostname;
+
+      if (isSamePage && url.hash) {
+        const target = qs(url.hash);
+        if (target) {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            
+            // Close offcanvas if link is inside one
+            const offcanvasEl = link.closest(".offcanvas");
+            if (offcanvasEl) {
+              const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+              if (bsOffcanvas) {
+                bsOffcanvas.hide();
+              }
+            }
+
+            const offset = 76; // --header-h
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = target.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: prefersReducedMotion() ? "auto" : "smooth",
+            });
+            
+            // Update URL hash without jumping
+            history.pushState(null, null, url.hash);
+          });
+        }
+      }
+    });
+  };
+
   const wireScrollSpy = () => {
     const sections = qsa("section[id]");
-    const navLinks = qsa(".site-nav a");
-    const mobileLinks = qsa(".offcanvas-body .nav-link");
+    const navLinks = qsa(".site-nav a, .offcanvas-body .nav-link");
 
     const observerOptions = {
       root: null,
-      rootMargin: "-20% 0px -70% 0px",
+      rootMargin: "-25% 0px -65% 0px",
       threshold: 0,
     };
 
@@ -230,9 +281,22 @@
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute("id");
           
-          [...navLinks, ...mobileLinks].forEach((link) => {
+          navLinks.forEach((link) => {
             const href = link.getAttribute("href");
-            if (href === `#${id}`) {
+            if (!href || href === "#") return;
+
+            let linkHash = "";
+            try {
+              // Handle relative links and absolute links
+              const url = new URL(link.href, window.location.origin);
+              linkHash = url.hash;
+            } catch (e) {
+              if (href.includes("#")) {
+                linkHash = "#" + href.split("#")[1];
+              }
+            }
+            
+            if (linkHash === `#${id}`) {
               link.classList.add("is-active");
             } else {
               link.classList.remove("is-active");
@@ -245,6 +309,19 @@
     sections.forEach((section) => observer.observe(section));
   };
 
+  const wireOffcanvasHiding = () => {
+    const offcanvas = qs("#navOffcanvas");
+    if (!offcanvas) return;
+
+    offcanvas.addEventListener("show.bs.offcanvas", () => {
+      document.body.classList.add("offcanvas-active");
+    });
+
+    offcanvas.addEventListener("hidden.bs.offcanvas", () => {
+      document.body.classList.remove("offcanvas-active");
+    });
+  };
+
   document.addEventListener("DOMContentLoaded", () => {
     applyPreferences();
     wireToggles();
@@ -254,5 +331,7 @@
     wireBlogSearchAndFilter();
     wireCountdown();
     wireScrollSpy();
+    wireSmoothScroll();
+    wireOffcanvasHiding();
   });
 })();

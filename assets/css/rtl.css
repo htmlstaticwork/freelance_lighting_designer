@@ -1,6 +1,6 @@
 [dir="rtl"] body{direction:rtl;}
 
-[dir="rtl"] .kicker::before{margin-inline-start:0;margin-inline-end:0;}
+[dir="rtl"] .kicker::before, [dir="rtl"] .kicker::after{margin-inline-start:0;margin-inline-end:0;}
 
 [dir="rtl"] .site-nav{justify-content:center;}
 

@@ -61,15 +61,14 @@
           </nav>
 
           <div class="header-actions">
-            <div class="d-none d-md-flex align-items-center gap-2">
+            <div class="d-1100-flex align-items-center gap-2">
               <a class="auth-link" href="login.html">Login</a>
-              <span aria-hidden="true">/</span>
               <a class="auth-link" href="register.html">Register</a>
             </div>
-            <button class="icon-btn" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
+            <button class="icon-btn d-1100-inline-flex" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
               <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
             </button>
-            <button class="chip-btn d-none d-md-inline-flex" type="button" data-action="toggle-dir">
+            <button class="chip-btn d-1100-inline-flex" type="button" data-action="toggle-dir">
               RTL
             </button>
             <button
@@ -85,32 +84,32 @@
           </div>
         </div>
       </div>
+    </header>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
-        <div class="offcanvas-header">
-          <h2 class="offcanvas-title h5 m-0" id="navOffcanvasLabel">LuxFrame</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <nav class="nav flex-column" aria-label="Mobile">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-            <a class="nav-link" href="index.html#productions">Productions</a>
-            <a class="nav-link" href="services.html">Services</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </nav>
-          <div class="offcanvas-actions">
-            <a class="chip-btn" href="login.html">Login</a>
-            <a class="chip-btn" href="register.html">Register</a>
-            <button class="icon-btn" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
-              <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
-            </button>
-            <button class="chip-btn" type="button" data-action="toggle-dir">RTL</button>
-          </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title h5 m-0" id="navOffcanvasLabel">LuxFrame</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="nav flex-column" aria-label="Mobile">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+          <a class="nav-link" href="index.html#productions">Productions</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="offcanvas-actions">
+          <a class="chip-btn" href="login.html">Login</a>
+          <a class="chip-btn" href="register.html">Register</a>
+          <button class="icon-btn" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
+            <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
+          </button>
+          <button class="chip-btn" type="button" data-action="toggle-dir">RTL</button>
         </div>
       </div>
-    </header>
+    </div>
 
     <main id="main">
       <section class="section">
@@ -229,9 +228,9 @@
             <div class="footer-title">Newsletter</div>
             <form class="needs-validation" novalidate>
               <label class="form-label" for="newsletterEmail">Monthly cue notes, no spam.</label>
-              <div class="d-flex gap-2 flex-wrap">
+              <div class="newsletter-form">
                 <input
-                  class="form-control flex-grow-1"
+                  class="form-control"
                   id="newsletterEmail"
                   name="email"
                   type="email"
