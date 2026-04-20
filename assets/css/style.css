@@ -8,6 +8,8 @@
   --radius:16px;
   --ring:0 0 0 2px color-mix(in srgb, var(--accent) 65%, transparent);
   --shadow:0 16px 44px rgba(0,0,0,.24);
+  --glass: blur(12px) saturate(180%);
+  --border: color-mix(in srgb, var(--fg) 12%, transparent);
 }
 
 :root[data-accent="gold"]{--accent:#D4A017;}
@@ -36,8 +38,8 @@ h1,h2,h3{
   line-height:1.2;
   margin:0 0 .6rem;
 }
-h1{font-size:clamp(40px,3.2vw,48px);letter-spacing:.4px;}
-h2{font-size:clamp(32px,2.4vw,36px);letter-spacing:.3px;}
+h1{font-size:clamp(40px,3.2vw,48px);letter-spacing:.4px; text-transform: uppercase;}
+h2{font-size:clamp(32px,2.4vw,36px);letter-spacing:.3px; text-transform: uppercase;}
 h3{font-size:clamp(24px,2vw,28px);letter-spacing:.2px;}
 
 .text-accent{color:var(--accent) !important;}
@@ -78,8 +80,9 @@ html{
   left:0;
   width:100%;
   z-index:1050;
-  background:var(--bg);
-  border-bottom:1px solid color-mix(in srgb, var(--fg) 14%, transparent);
+  background:color-mix(in srgb, var(--bg) 80%, transparent);
+  backdrop-filter: var(--glass);
+  border-bottom:1px solid var(--border);
 }
 main{
   margin-top:0;
@@ -133,8 +136,9 @@ main{
   box-shadow:var(--ring);
 }
 .site-nav a.is-active{
-  color:var(--accent);
-  box-shadow:var(--ring);
+  box-shadow: 0 2px 0 0 var(--accent);
+  border-radius: 0;
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 30%, transparent);
 }
 .header-actions{
   display:flex;
@@ -309,6 +313,60 @@ main{
 .back-to-top:hover{box-shadow:var(--ring);border-color:color-mix(in srgb, var(--accent) 55%, transparent);color:var(--accent);}
 .back-to-top:focus{outline:none;box-shadow:var(--ring);}
 
+/* Atmospheric Effects */
+.light-beam {
+  position: absolute;
+  top: -20%;
+  left: 10%;
+  width: 40%;
+  height: 140%;
+  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 8%, transparent) 0%, transparent 70%);
+  transform: rotate(35deg);
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(40px);
+}
+.light-beam.right {
+  left: auto;
+  right: 10%;
+  transform: rotate(-35deg);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.haze-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 10% 20%, color-mix(in srgb, var(--accent) 5%, transparent) 0%, transparent 50%),
+              radial-gradient(circle at 90% 80%, color-mix(in srgb, var(--accent) 5%, transparent) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.surface {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+}
+.surface:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 40%, color-mix(in srgb, var(--accent) 5%, transparent) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.surface:hover::after {
+  opacity: 1;
+}
+
 .section{
   padding:clamp(44px,6vw,86px) 0;
 }
@@ -372,7 +430,8 @@ main{
   background:color-mix(in srgb, var(--bg) 88%, transparent);
   border:1px solid color-mix(in srgb, var(--fg) 16%, transparent);
   border-radius:var(--radius);
-  text-align:center;
+  padding: 2.5rem;
+  text-align:left;
   display:flex;
   flex-direction:column;
   height:100%;
@@ -406,10 +465,10 @@ main{
   content:"";
   position:absolute;
   inset:0;
-  background-image:url('https://picsum.photos/id/20/1600/900');
+  background-image:url('../images/hero-bg.png');
   background-size:cover;
   background-position:center;
-  opacity:0.3;
+  opacity:0.5;
   z-index:0;
 }
 .blackout-stage .spotlight{

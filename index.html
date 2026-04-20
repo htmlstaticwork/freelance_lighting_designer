@@ -1,37 +1,28 @@
 <!doctype html>
 <html lang="en" dir="ltr" data-theme="dark" data-accent="gold">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LuxFrame — Lighting Tells the Story</title>
-    <meta
-      name="description"
-      content="LuxFrame designs theatrical and film lighting that shapes emotion, focus, and narrative—cue by cue, frame by frame."
-    />
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LuxFrame — Lighting Tells the Story</title>
+  <meta name="description"
+    content="LuxFrame designs theatrical and film lighting that shapes emotion, focus, and narrative—cue by cue, frame by frame." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/dark-mode.css" />
-    <link rel="stylesheet" href="assets/css/rtl.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
-    <script type="application/ld+json">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/dark-mode.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -41,1114 +32,1159 @@
         "knowsAbout": ["Theatre lighting design", "Film lighting design", "Cue programming", "Lighting plots"]
       }
     </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+</head>
 
-    <header class="site-header">
-      <div class="container-fluid px-3 px-md-4">
-        <div class="header-inner">
-          <a class="brand" href="#home" aria-label="LuxFrame Home">
-            <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
-          </a>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-          <nav class="site-nav d-1100-flex" aria-label="Primary">
-            <a href="#home">Home</a>
-            <a href="#home-2">Behind the Rig</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#services">Services</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-          </nav>
+  <header class="site-header">
+    <div class="container-fluid px-3 px-md-4">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="LuxFrame Home">
+          <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
+        </a>
 
-          <div class="header-actions">
-            <div class="d-1100-flex align-items-center">
-              <a class="btn btn-accent btn-sm" href="contact.html">Reach Me</a>
-            </div>
-            <button class="icon-btn d-1100-inline-flex" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
-              <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
-            </button>
-            <button class="chip-btn d-1100-inline-flex" type="button" data-action="toggle-dir">
-              RTL
-            </button>
-            <button
-              class="icon-btn d-1100-none"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#navOffcanvas"
-              aria-controls="navOffcanvas"
-              aria-label="Open menu"
-            >
-              <i class="bi bi-list fs-4" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-label="Navigation Menu">
-      <div class="offcanvas-header justify-content-end">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <nav class="nav flex-column" aria-label="Mobile">
-          <a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a>
-          <a class="nav-link" href="#home-2" data-bs-dismiss="offcanvas">Behind the Rig</a>
-          <a class="nav-link" href="#portfolio" data-bs-dismiss="offcanvas">Portfolio</a>
-          <a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a>
-          <a class="nav-link" href="#blog" data-bs-dismiss="offcanvas">Blog</a>
-          <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+        <nav class="site-nav d-1100-flex" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#home-2">Behind the Rig</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#services">Services</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <div class="offcanvas-actions">
-          <a class="btn btn-accent w-100 mb-3" href="contact.html">Reach Me</a>
-          <button class="icon-btn" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
+
+        <div class="header-actions">
+          <div class="d-1100-flex align-items-center">
+            <a class="btn btn-accent btn-sm" href="contact.html">Reach Me</a>
+          </div>
+          <button class="icon-btn d-1100-inline-flex" type="button" data-action="toggle-combined"
+            aria-label="Toggle Theme and Accent">
             <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
           </button>
-          <button class="chip-btn" type="button" data-action="toggle-dir">RTL</button>
+          <button class="chip-btn d-1100-inline-flex" type="button" data-action="toggle-dir">
+            RTL
+          </button>
+          <button class="icon-btn d-1100-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas"
+            aria-controls="navOffcanvas" aria-label="Open menu">
+            <i class="bi bi-list fs-4" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </div>
+  </header>
 
-    <main id="main">
-      <section id="home" class="snap-section">
-        <div class="blackout-stage" data-blackout-stage>
-          <div class="spotlight" aria-hidden="true"></div>
-          <div class="cue">
-            <h1>Light Tells the Story.</h1>
-            <p>Theatrical &amp; Film Lighting Design by LuxFrame.</p>
-            <div class="cta-row">
-              <a class="btn btn-solid" href="#portfolio">View Productions</a>
-              <a class="btn btn-accent" href="#contact">Discuss Your Production</a>
-            </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-label="Navigation Menu">
+    <div class="offcanvas-header justify-content-end">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="nav flex-column" aria-label="Mobile">
+        <a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a>
+        <a class="nav-link" href="#home-2" data-bs-dismiss="offcanvas">Behind the Rig</a>
+        <a class="nav-link" href="#portfolio" data-bs-dismiss="offcanvas">Portfolio</a>
+        <a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a>
+        <a class="nav-link" href="#blog" data-bs-dismiss="offcanvas">Blog</a>
+        <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+      </nav>
+      <div class="offcanvas-actions">
+        <a class="btn btn-accent w-100 mb-3" href="contact.html">Reach Me</a>
+        <button class="icon-btn" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
+          <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
+        </button>
+        <button class="chip-btn" type="button" data-action="toggle-dir">RTL</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section id="home" class="snap-section">
+      <div class="blackout-stage" data-blackout-stage>
+        <div class="haze-backdrop"></div>
+        <div class="light-beam"></div>
+        <div class="light-beam right"></div>
+        <div class="spotlight" aria-hidden="true"></div>
+        <div class="cue">
+          <h1 class="glow-text">Light Tells the Story.</h1>
+          <p class="fs-4">Theatrical &amp; Film Lighting Design by LuxFrame.</p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#portfolio">View Productions</a>
+            <a class="btn btn-accent" href="#contact">Discuss Your Production</a>
           </div>
-        </div>
-      </section>
-
-      <section id="home-2" class="snap-section">
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Behind the Rig</div>
-              <h1 class="mb-2">Before the cue fires, the rig is already telling the story.</h1>
-              <p class="mb-0">
-                Equipment choices, plot logic, and programming discipline—so when the moment arrives, the light lands
-                exactly where it should.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-tight">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Equipment Showcase</div>
-              <h2>Tools of the mood.</h2>
-            </div>
-            <div class="row g-3">
-              <div class="col-12 col-md-6">
-                <div class="surface p-4 h-100">
-                  <div class="d-flex align-items-start gap-3">
-                    <div class="icon-btn" aria-hidden="true"><i class="bi bi-gear-wide-connected"></i></div>
-                    <div>
-                      <h3 class="h4 mb-2">Moving Heads</h3>
-                      <p class="mb-2">Fast focus shifts, sculpted beams, and precise transitions between looks.</p>
-                      <div class="mono">Example: Martin MAC / Robe</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="surface p-4 h-100">
-                  <div class="d-flex align-items-start gap-3">
-                    <div class="icon-btn" aria-hidden="true"><i class="bi bi-bounding-box-circles"></i></div>
-                    <div>
-                      <h3 class="h4 mb-2">Ellipsoidals</h3>
-                      <p class="mb-2">Hard-edged story light with shutters, gobos, and sharp intent.</p>
-                      <div class="mono">Example: ETC Source Four</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="surface p-4 h-100">
-                  <div class="d-flex align-items-start gap-3">
-                    <div class="icon-btn" aria-hidden="true"><i class="bi bi-brightness-high"></i></div>
-                    <div>
-                      <h3 class="h4 mb-2">LED Wash</h3>
-                      <p class="mb-2">A wide palette without muddying the scene—clean saturation, controlled softness.</p>
-                      <div class="mono">Example: Chauvet / ETC</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="surface p-4 h-100">
-                  <div class="d-flex align-items-start gap-3">
-                    <div class="icon-btn" aria-hidden="true"><i class="bi bi-cloud-haze2"></i></div>
-                    <div>
-                      <h3 class="h4 mb-2">Haze &amp; Atmospherics</h3>
-                      <p class="mb-2">Air as a canvas—beam readability, depth separation, and subtle bloom.</p>
-                      <div class="mono">Example: DF-50 / MDG</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Process</div>
-              <h2>From script to stage.</h2>
-            </div>
-
-            <div class="row g-3 align-items-stretch">
-              <div class="col-12 col-lg-6">
-                <div class="surface p-4 h-100">
-                  <div class="kicker mb-2">Phase 1</div>
-                  <h3 class="h4">Read the Script</h3>
-                  <p class="mb-0">
-                    Identify the emotional beats: silence, reveal, confrontation, relief—then define the lighting
-                    vocabulary that supports them.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="surface p-4 h-100">
-                  <div class="kicker mb-2">Phase 2</div>
-                  <h3 class="h4">Design the Plot</h3>
-                  <p class="mb-0">
-                    Build focus architecture: angles, zones, and practical logic. Every fixture has a narrative job.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="surface p-4 h-100">
-                  <div class="kicker mb-2">Phase 3</div>
-                  <h3 class="h4">Program the Cues</h3>
-                  <p class="mb-0">
-                    Timing is writing. Fade curves and snap decisions become rhythm—clean programming, no surprises.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="surface p-4 h-100">
-                  <div class="kicker mb-2">Phase 4</div>
-                  <h3 class="h4">Tech Rehearsal</h3>
-                  <p class="mb-0">
-                    Refine focus, protect skin tones, eliminate spill, and lock the final cue stack with the director’s
-                    intent.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="snap-section">
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Production Reel Strip</div>
-              <h2>Frames from the booth. Cuts from the set.</h2>
-            </div>
-          </div>
-          <div class="container-fluid px-3 px-md-4">
-            <div class="reel-wrapper">
-              <button class="reel-nav prev" aria-label="Previous frame" data-reel-prev>
-                <i class="bi bi-chevron-left" aria-hidden="true"></i>
-              </button>
-              <div class="reel" aria-label="Production frames" data-production-reel>
-                <article class="frame">
-                  <img class="frame-img" src="https://picsum.photos/id/10/800/450" alt="Blackbird production" />
-                  <h3>Blackbird</h3>
-                  <div class="small">Riverview Playhouse • 2026</div>
-                  <div class="role">Lighting Designer</div>
-                  <div class="meta">
-                    <span class="badge-genre"><i class="bi bi-mask" aria-hidden="true"></i>Drama</span>
-                    <span class="badge-genre"><i class="bi bi-lightbulb" aria-hidden="true"></i>45° Cross-key</span>
-                  </div>
-                </article>
-                <article class="frame">
-                  <img class="frame-img" src="https://picsum.photos/id/11/800/450" alt="Neon Aftermath production" />
-                  <h3>Neon Aftermath</h3>
-                  <div class="small">Short Film • 2025</div>
-                  <div class="role">Gaffer / Lighting Design</div>
-                  <div class="meta">
-                    <span class="badge-genre"><i class="bi bi-camera-reels" aria-hidden="true"></i>Horror Film</span>
-                    <span class="badge-genre"><i class="bi bi-droplet" aria-hidden="true"></i>Haze Layer</span>
-                  </div>
-                </article>
-                <article class="frame">
-                  <img class="frame-img" src="https://picsum.photos/id/12/800/450" alt="The Glass Orchard production" />
-                  <h3>The Glass Orchard</h3>
-                  <div class="small">Eastline Theatre • 2024</div>
-                  <div class="role">LD Associate</div>
-                  <div class="meta">
-                    <span class="badge-genre"><i class="bi bi-music-note-beamed" aria-hidden="true"></i>Musical</span>
-                    <span class="badge-genre"><i class="bi bi-sunrise" aria-hidden="true"></i>Warm Wash</span>
-                  </div>
-                </article>
-                <article class="frame">
-                  <img class="frame-img" src="https://picsum.photos/id/13/800/450" alt="Salt & Static production" />
-                  <h3>Salt &amp; Static</h3>
-                  <div class="small">Studio Set • 2026</div>
-                  <div class="role">Lighting Designer</div>
-                  <div class="meta">
-                    <span class="badge-genre"><i class="bi bi-film" aria-hidden="true"></i>Drama Film</span>
-                    <span class="badge-genre"><i class="bi bi-circle-half" aria-hidden="true"></i>Negative Fill</span>
-                  </div>
-                </article>
-                <article class="frame">
-                  <img class="frame-img" src="https://picsum.photos/id/14/800/450" alt="Broken Compass production" />
-                  <h3>Broken Compass</h3>
-                  <div class="small">City Fringe • 2025</div>
-                  <div class="role">Full Production LD</div>
-                  <div class="meta">
-                    <span class="badge-genre"><i class="bi bi-person-walking" aria-hidden="true"></i>Dance</span>
-                    <span class="badge-genre"><i class="bi bi-stars" aria-hidden="true"></i>Cyc Texture</span>
-                  </div>
-                </article>
-                <article class="frame">
-                  <img class="frame-img" src="https://picsum.photos/id/15/800/450" alt="Night Market production" />
-                  <h3>Night Market</h3>
-                  <div class="small">Music Video • 2024</div>
-                  <div class="role">Lighting Designer</div>
-                  <div class="meta">
-                    <span class="badge-genre"><i class="bi bi-vinyl" aria-hidden="true"></i>Music Video</span>
-                    <span class="badge-genre"><i class="bi bi-brightness-high" aria-hidden="true"></i>Practical Pops</span>
-                  </div>
-                </article>
-              </div>
-              <button class="reel-nav next" aria-label="Next frame" data-reel-next>
-                <i class="bi bi-chevron-right" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-tight" id="productions">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">The Cue Sheet</div>
-              <h2>Precision you can feel.</h2>
-            </div>
-
-            <div class="table-responsive">
-              <table class="cue-sheet mono" aria-label="Cue sheet">
-                <thead>
-                  <tr>
-                    <th scope="col">Cue #</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Intensity</th>
-                    <th scope="col">Color Temp</th>
-                    <th scope="col">Fade</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>12</td>
-                    <td>Sunrise over Act 2 balcony</td>
-                    <td>42%</td>
-                    <td>5600K</td>
-                    <td>3s</td>
-                  </tr>
-                  <tr>
-                    <td>19</td>
-                    <td>Door crack — thin blade across the floor</td>
-                    <td>18%</td>
-                    <td>3200K</td>
-                    <td>0s</td>
-                  </tr>
-                  <tr>
-                    <td>27</td>
-                    <td>Memory wash — soft top + haze bloom</td>
-                    <td>36%</td>
-                    <td>3200K</td>
-                    <td>5s</td>
-                  </tr>
-                  <tr>
-                    <td>31</td>
-                    <td>Cyc shift — horizon edge to silhouette</td>
-                    <td>55%</td>
-                    <td>5600K</td>
-                    <td>2s</td>
-                  </tr>
-                  <tr>
-                    <td>44</td>
-                    <td>Interrogation — hard sidelight, falloff kept</td>
-                    <td>62%</td>
-                    <td>5600K</td>
-                    <td>1s</td>
-                  </tr>
-                  <tr>
-                    <td>58</td>
-                    <td>Final blackout — breath held, no spill</td>
-                    <td>0%</td>
-                    <td>—</td>
-                    <td>0s</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Light vs. No Light</div>
-              <h2>The difference is not brighter. It’s deliberate.</h2>
-            </div>
-
-            <div class="split-contrast">
-              <article class="contrast-panel no-design">
-                <h3>Scene without design</h3>
-                <p>
-                  The stage reads evenly. Faces are visible, but nobody has focus. The back wall sits flat. The tension
-                  has no shape—everything shares the same value.
-                </p>
-                <p class="mono mb-0">Result: readable… forgettable.</p>
-              </article>
-              <article class="contrast-panel with-design">
-                <h3>Scene with LuxFrame</h3>
-                <p>
-                  Cross-key at 45° carves the lead. A CTO touch warms skin while a controlled cool wash holds the
-                  horizon. The cyc becomes weather. Negative fill protects the moment.
-                </p>
-                <p class="mono mb-0">Result: the audience knows where to feel.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-tight">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Director Testimonials</div>
-              <h2>Two notes from the table.</h2>
-            </div>
-
-            <div class="director-notes">
-              <article class="note">
-                <p class="mb-2">
-                  <em>“The cues read like dialogue. The lighting didn’t decorate the story—it delivered it.”</em>
-                </p>
-                <div class="sig">Mara Elgin • Blackbird</div>
-              </article>
-              <article class="note">
-                <p class="mb-2">
-                  <em>“LuxFrame found the fear between the lines: hard edges, soft falloff, and a perfect blackout.”</em>
-                </p>
-                <div class="sig">Jon Kaito • Neon Aftermath</div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="section cta-band">
-          <div class="container container-max">
-            <h2>Every stage is a blank canvas. Let’s paint it with light.</h2>
-            <p>
-              Email
-              <a href="mailto:hello@luxframe.example">hello@luxframe.example</a>
-              or share your dates and venue details.
-            </p>
-            <div class="cta-row mt-3">
-              <a class="btn btn-solid" href="#contact">Discuss Your Production</a>
-              <a class="btn btn-accent" href="#home-2">Behind the Rig</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="about" class="snap-section">
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">About LuxFrame</div>
-              <h1 class="mb-2">Story first. Fixtures second.</h1>
-              <p class="mb-0">
-                A decade of theatre cueing and film lighting—translating scripts into light, shadow, and timing.
-              </p>
-            </div>
-
-            <div class="row g-4 mt-4">
-              <div class="col-12 col-lg-4">
-                <div class="surface p-4 h-100">
-                  <h2 class="h4 mb-3">The Philosophy</h2>
-                  <p>
-                    I don’t just "light the stage." I design the focus. Every cue should feel like a line of
-                    dialogue—necessary, rhythmic, and intentional.
-                  </p>
-                  <p class="mb-0">
-                    Whether it’s a high-contrast horror short or a minimalist stage drama, the goal is the same:
-                    clarity for the eye, emotion for the soul.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-8">
-                <div class="surface p-4 h-100">
-                  <h2 class="h4 mb-3">Timeline</h2>
-                  <div class="timeline" aria-label="Professional timeline">
-                    <div class="timeline-item">
-                      <div class="year">2026</div>
-                      <div class="content">
-                        <h3 class="h5 mb-1">Lead Designer — Blackbird</h3>
-                        <p class="mb-0">Riverview Playhouse. Full production design and programming.</p>
-                      </div>
-                    </div>
-                    <div class="timeline-item">
-                      <div class="year">2025</div>
-                      <div class="content">
-                        <h3 class="h5 mb-1">Gaffer / LD — Neon Aftermath</h3>
-                        <p class="mb-0">Short film. Established the high-saturation, low-key visual language.</p>
-                      </div>
-                    </div>
-                    <div class="timeline-item">
-                      <div class="year">2024</div>
-                      <div class="content">
-                        <h3 class="h5 mb-1">Associate LD — The Glass Orchard</h3>
-                        <p class="mb-0">Eastline Theatre. Supported the primary designer on a 150+ cue musical.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-tight">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Core Skills</div>
-              <h2>Control over every photon.</h2>
-            </div>
-            <div class="row g-3">
-              <div class="col-6 col-md-3">
-                <div class="surface p-3 text-center h-100">
-                  <div class="h3 mb-1">98%</div>
-                  <div class="small mono">Cue Accuracy</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="surface p-3 text-center h-100">
-                  <div class="h3 mb-1">10+</div>
-                  <div class="small mono">Film Credits</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="surface p-3 text-center h-100">
-                  <div class="h3 mb-1">450+</div>
-                  <div class="small mono">Cues Written</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="surface p-3 text-center h-100">
-                  <div class="h3 mb-1">100%</div>
-                  <div class="small mono">Venue Safety</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section cta-band">
-          <div class="container container-max">
-            <h2>Ready to define the look of your next show?</h2>
-            <div class="cta-row mt-3">
-              <a class="btn btn-solid" href="#contact">Discuss Your Production</a>
-              <a class="btn btn-accent" href="#services">Explore Services</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="snap-section">
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Design Services</div>
-              <h1 class="mb-2">One discipline. Two worlds.</h1>
-              <p class="mb-0">
-                Tailored lighting solutions for the stage and the screen, built with technical precision and story
-                clarity.
-              </p>
-            </div>
-
-            <div class="row g-3 mt-4">
-              <div class="col-12 col-md-6">
-                <div class="surface p-4 h-100">
-                  <div class="icon-btn mb-3" aria-hidden="true"><i class="bi bi-mask"></i></div>
-                  <h2 class="h4 mb-3">Theatre Design</h2>
-                  <p class="mb-4">
-                    From script analysis to the final blackout. Full plot design, cue programming, and tech
-                    rehearsal management for dramas, musicals, and dance.
-                  </p>
-                  <ul class="mb-4">
-                    <li>Full Vectorworks plots</li>
-                    <li>EOS / GrandMA programming</li>
-                    <li>Focus management</li>
-                  </ul>
-                  <a class="btn btn-accent" href="#service-details">View Workflow</a>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6">
-                <div class="surface p-4 h-100">
-                  <div class="icon-btn mb-3" aria-hidden="true"><i class="bi bi-camera-reels"></i></div>
-                  <h2 class="h4 mb-3">Film Lighting / Gaffer</h2>
-                  <p class="mb-4">
-                    Shaping the frame. Managing the grip and electric crew to deliver the DP’s vision with speed,
-                    safety, and narrative consistency and also best looks.
-                  </p>
-                  <ul class="mb-4">
-                    <li>Lighting plans & lists</li>
-                    <li>On-set crew management</li>
-                    <li>Atmospherics & practicals</li>
-                  </ul>
-                  <a class="btn btn-accent" href="#service-details">View Workflow</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-tight">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker"><i class="bi bi-lightning-charge-fill me-1"></i>The Process</div>
-              <h2><i class="bi bi-gear-wide-connected me-3 text-accent"></i>How we build the look.</h2>
-            </div>
-            <div class="row g-3">
-              <div class="col-12 col-md-4">
-                <div class="surface p-4 h-100 text-center">
-                  <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
-                    <div class="icon-feature mb-0" style="width: 42px; height: 42px; font-size: 18px;" aria-hidden="true"><i class="bi bi-eye-fill"></i></div>
-                    <h3 class="h5 mb-0">1. Concept</h3>
-                  </div>
-                  <p class="mb-0 text-muted">Script reading, reference gathering, and establishing the emotional palette.</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="surface p-4 h-100 text-center">
-                  <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
-                    <div class="icon-feature mb-0" style="width: 42px; height: 42px; font-size: 18px;" aria-hidden="true"><i class="bi bi-vector-pen"></i></div>
-                    <h3 class="h5 mb-0">2. Plot</h3>
-                  </div>
-                  <p class="mb-0 text-muted">Technical design: angles, fixture choices, and power distribution plans.</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="surface p-4 h-100 text-center">
-                  <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
-                    <div class="icon-feature mb-0" style="width: 42px; height: 42px; font-size: 18px;" aria-hidden="true"><i class="bi bi-cpu-fill"></i></div>
-                    <h3 class="h5 mb-0">3. Tech</h3>
-                  </div>
-                  <p class="mb-0 text-muted">Programming, focus, and refinement during rehearsals to lock the final show.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="service-details" class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Workflow</div>
-              <h2 class="mb-2">From plot to premiere.</h2>
-              <p class="mb-0">A transparent, repeatable process to ensure your production stays on schedule and on budget.</p>
-            </div>
-
-            <div class="row g-4 mt-4">
-              <div class="col-12 col-lg-8">
-                <article class="surface p-4">
-                  <h3 class="h4 mb-3">The Stage Design Workflow</h3>
-                  <p>For theatrical productions, the process is built around the tech schedule. We don't waste time on stage.</p>
-                  
-                  <div class="workflow-steps mt-4">
-                    <div class="workflow-step mb-4">
-                      <div class="h5 kicker mb-2">Step 1: Plotting</div>
-                      <p>Full Vectorworks design including instrument schedules, patch lists, and power distribution requirements. This ensures the hang is fast and the crew knows exactly what goes where.</p>
-                    </div>
-                    <div class="workflow-step mb-4">
-                      <div class="h5 kicker mb-2">Step 2: Focus</div>
-                      <p>Managing the focus session with precision. Every fixture is carves to its purpose—no spill, no glare, just clear narrative intent.</p>
-                    </div>
-                    <div class="workflow-step mb-0">
-                      <div class="h5 kicker mb-2">Step 3: Programming</div>
-                      <p>Writing the cue stack. I program with a focus on timing and "breath," ensuring the light moves with the actors, not just alongside them.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-12 col-lg-4">
-                <aside class="surface p-4">
-                  <h3 class="h5 mb-3">Deliverables</h3>
-                  <ul class="footer-links list-unstyled">
-                    <li><i class="bi bi-file-earmark-pdf me-2"></i>PDF Light Plot</li>
-                    <li><i class="bi bi-file-earmark-spreadsheet me-2"></i>Instrument Schedule</li>
-                    <li><i class="bi bi-file-earmark-code me-2"></i>Console Showfile</li>
-                    <li><i class="bi bi-file-earmark-text me-2"></i>Cue Synopsis</li>
-                  </ul>
-                  <div class="mt-4">
-                    <a class="btn btn-solid w-100" href="#contact">Start a Project</a>
-                  </div>
-                </aside>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section cta-band">
-          <div class="container container-max">
-            <h2>Looking for specific rates or a project quote?</h2>
-            <div class="cta-row mt-3">
-              <a class="btn btn-solid" href="#pricing">View Rates</a>
-              <a class="btn btn-accent" href="#contact">Contact Me</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="pricing" class="snap-section">
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Pricing & Rates</div>
-              <h1 class="mb-2">Clear rates. Professional results.</h1>
-              <p class="mb-0">
-                Transparent pricing for theatre and film projects. All rates include standard insurance and basic kit.
-              </p>
-            </div>
-
-            <div class="row g-3 mt-4">
-              <div class="col-12 col-lg-4">
-                <div class="surface p-4 h-100">
-                  <div class="h5 kicker mb-2">Theatre</div>
-                  <h2 class="h3 mb-3">Project Fee</h2>
-                  <p class="mb-4">Complete design from plot to tech. Best for stage productions with set runs.</p>
-                  <div class="h2 mb-4">From $1,200</div>
-                  <ul class="mb-4">
-                    <li>Full Vectorworks plot</li>
-                    <li>30 hrs Tech / Rehearsal</li>
-                    <li>Cue list documentation</li>
-                  </ul>
-                  <a class="btn btn-solid w-100" href="#contact">Get Quote</a>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-4">
-                <div class="surface p-4 h-100 border-accent">
-                  <div class="h5 kicker mb-2">Film / Gaffer</div>
-                  <h2 class="h3 mb-3">Day Rate</h2>
-                  <p class="mb-4">Professional lighting management for commercial or narrative film sets.</p>
-                  <div class="h2 mb-4">$550 <small class="h6">/ 10hr</small></div>
-                  <ul class="mb-4">
-                    <li>Grip & Electric oversight</li>
-                    <li>Basic expendables included</li>
-                    <li>Pre-pro consultation</li>
-                  </ul>
-                  <a class="btn btn-solid w-100" href="#contact">Book Dates</a>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-4">
-                <div class="surface p-4 h-100">
-                  <div class="h5 kicker mb-2">Consultation</div>
-                  <h2 class="h3 mb-3">Hourly</h2>
-                  <p class="mb-4">Plot reviews, equipment specs, or console programming training sessions.</p>
-                  <div class="h2 mb-4">$75 <small class="h6">/ hr</small></div>
-                  <ul class="mb-4">
-                    <li>2 hr minimum booking</li>
-                    <li>Remote or on-site</li>
-                    <li>Technical documentation</li>
-                  </ul>
-                  <a class="btn btn-solid w-100" href="#contact">Hire Hourly</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-tight">
-          <div class="container container-max">
-            <div class="surface p-4">
-              <h3 class="h5 mb-3">Notes on Booking</h3>
-              <p class="mb-0">
-                Travel outside the metropolitan area is billed at cost. For multi-week theatre runs or feature
-                films, custom package rates are available. Standard payment terms: 50% deposit to lock dates.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="blog" class="snap-section">
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">The Blog</div>
-              <h1 class="mb-2">Notes from the console.</h1>
-              <p class="mb-0">Practical advice on theatre cues, film lighting, and the business of freelance design.</p>
-            </div>
-
-            <div class="row g-3 mt-4">
-              <div class="col-12 col-md-6">
-                <article class="post-row h-100">
-                  <img src="https://picsum.photos/id/1/800/450" alt="Lighting console" class="post-image">
-                  <div class="post-content">
-                    <div class="meta">Technique • 6 min</div>
-                    <h2 class="h4">Fade Curves: The difference between “smooth” and “alive”</h2>
-                    <p>How linear fades flatten emotion—and why your crossfades should breathe like the scene.</p>
-                    <a class="btn btn-accent" href="#blog-details">Read Article</a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-12 col-md-6">
-                <article class="post-row h-100">
-                  <img src="https://picsum.photos/id/2/800/450" alt="Haze in theater" class="post-image">
-                  <div class="post-content">
-                    <div class="meta">Gear Reviews • 5 min</div>
-                    <h2 class="h4">Haze, not smoke: beam readability without choking the stage</h2>
-                    <p>Atmospherics as a precision tool—placement, density, and how to keep faces clean.</p>
-                    <a class="btn btn-accent" href="#blog-details">Read Article</a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-12 col-md-6">
-                <article class="post-row h-100">
-                  <img src="https://picsum.photos/id/3/800/450" alt="Stage crew working" class="post-image">
-                  <div class="post-content">
-                    <div class="meta">Business • 4 min</div>
-                    <h2 class="h4">Focus Notes That Crews Actually Use</h2>
-                    <p>Stop writing novels in your focus charts. A guide to concise, actionable crew communication.</p>
-                    <a class="btn btn-accent" href="#blog-details">Read Article</a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-12 col-md-6">
-                <article class="post-row h-100">
-                  <img src="https://picsum.photos/id/4/800/450" alt="Cinematic lighting" class="post-image">
-                  <div class="post-content">
-                    <div class="meta">Technique • 7 min</div>
-                    <h2 class="h4">Negative Fill: Depth on the sets of low-budget shorts</h2>
-                    <p>You don't need more lights; you need more darkness. Controlling falloff in tight spaces.</p>
-                    <a class="btn btn-accent" href="#blog-details">Read Article</a>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="blog-details" class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Technique</div>
-              <h2 class="mb-2">Fade Curves: The difference between “smooth” and “alive”</h2>
-              <p class="mb-0">A practical lighting note for theatre cues and film transitions.</p>
-            </div>
-
-            <div class="row g-3 mt-4">
-              <div class="col-12 col-lg-8">
-                <article class="surface p-4">
-                  <p class="mono mb-3">Read time: 6 minutes</p>
-                  <p>
-                    A fade is not decoration. A fade is the timing of belief: when the audience decides a change is
-                    happening, when they accept it, and when they forget it ever changed.
-                  </p>
-                  <h2 class="h4 mt-4">1) The cue has a purpose</h2>
-                  <p>
-                    If the cue is a reveal, the rise must feel intentional. If it’s a memory, the change must feel like
-                    it came from inside the scene—not from the console.
-                  </p>
-                  <h2 class="h4 mt-4">2) The audience tracks contrast, not intensity</h2>
-                  <p>
-                    Percentage values are meaningless without context. The eye follows edges: what gets protected, what
-                    gets removed, and what stays still.
-                  </p>
-
-                  <div class="mt-4">
-                    <div class="kicker mb-2">Mini Cue Sheet</div>
-                    <div class="table-responsive">
-                      <table class="cue-sheet mono" aria-label="Mini cue sheet">
-                        <thead>
-                          <tr>
-                            <th scope="col">Cue #</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Intensity</th>
-                            <th scope="col">Color Temp</th>
-                            <th scope="col">Fade</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>19</td>
-                            <td>Door crack — thin blade across the floor</td>
-                            <td>18%</td>
-                            <td>3200K</td>
-                            <td>0s</td>
-                          </tr>
-                          <tr>
-                            <td>27</td>
-                            <td>Memory wash — soft top + haze bloom</td>
-                            <td>36%</td>
-                            <td>3200K</td>
-                            <td>5s</td>
-                          </tr>
-                          <tr>
-                            <td>31</td>
-                            <td>Cyc shift — horizon edge to silhouette</td>
-                            <td>55%</td>
-                            <td>5600K</td>
-                            <td>2s</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-
-                  <h2 class="h4 mt-4">3) Write fades like dialogue</h2>
-                  <p class="mb-0">
-                    A “smooth” fade is often just a long one. An “alive” fade respects the actor’s timing and the
-                    director’s breath. Start with the beat. Then decide whether the change should be noticed.
-                  </p>
-                </article>
-              </div>
-
-              <div class="col-12 col-lg-4">
-                <aside class="surface p-4">
-                  <div class="footer-title">Topics</div>
-                  <div class="footer-links">
-                    <a href="#blog">Theatre</a>
-                    <a href="#blog">Film</a>
-                    <a href="#blog">Technique</a>
-                    <a href="#blog">Gear Reviews</a>
-                  </div>
-
-                  <div class="footer-title mt-4">Recent</div>
-                  <div class="footer-links">
-                    <a href="#blog-details">Focus Notes That Crews Actually Use</a>
-                    <a href="#blog-details">Negative Fill: Depth on set</a>
-                    <a href="#blog-details">Haze, not smoke</a>
-                  </div>
-
-                  <div class="mt-4">
-                    <a class="btn btn-solid w-100" href="#contact">Discuss Your Production</a>
-                  </div>
-                </aside>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="snap-section">
-        <div class="section">
-          <div class="container container-max">
-            <div class="section-title">
-              <div class="kicker">Contact</div>
-              <h1 class="mb-2">Send the details. I’ll build the looks.</h1>
-              <p class="mb-0">
-                Email
-                <a href="mailto:hello@luxframe.example">hello@luxframe.example</a>
-                or use the form with venue and dates.
-              </p>
-            </div>
-
-            <div class="row g-3 mt-4">
-              <div class="col-12 col-lg-7">
-                <div class="surface p-4 text-start">
-                  <h2 class="h3 mb-4 text-center">Message Us</h2>
-                  <form class="needs-validation" data-demo-submit novalidate>
-                    <div class="row g-3">
-                      <div class="col-12 position-relative">
-                        <label class="form-label" for="name">Name</label>
-                        <input class="form-control" id="name" name="name" required minlength="2" />
-                        <div class="invalid-tooltip">Enter your name.</div>
-                      </div>
-                      <div class="col-12 position-relative">
-                        <label class="form-label" for="email">Email</label>
-                        <input class="form-control" id="email" name="email" type="email" required />
-                        <div class="invalid-tooltip">Enter a valid email address.</div>
-                      </div>
-                      <div class="col-12 position-relative">
-                        <label class="form-label" for="productionType">Production Type</label>
-                        <select class="form-select" id="productionType" name="productionType" required>
-                          <option value="" selected disabled>Select…</option>
-                          <option>Theatre — Drama</option>
-                          <option>Theatre — Musical</option>
-                          <option>Theatre — Dance</option>
-                          <option>Film — Short</option>
-                          <option>Film — Feature</option>
-                          <option>Event / Festival</option>
-                        </select>
-                        <div class="invalid-tooltip">Choose a production type.</div>
-                      </div>
-                      <div class="col-12 position-relative">
-                        <label class="form-label" for="venue">Venue / Studio</label>
-                        <input class="form-control" id="venue" name="venue" required minlength="2" />
-                        <div class="invalid-tooltip">Add the venue or studio name.</div>
-                      </div>
-                      <div class="col-12 position-relative">
-                        <label class="form-label" for="dates">Dates</label>
-                        <input
-                          class="form-control"
-                          id="dates"
-                          name="dates"
-                          required
-                          placeholder="e.g., Tech: May 12–14 • Run: May 20–Jun 2"
-                        />
-                        <div class="invalid-tooltip">Add your key dates.</div>
-                      </div>
-                      <div class="col-12 position-relative">
-                        <label class="form-label" for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" required minlength="20"></textarea>
-                        <div class="invalid-tooltip">Give a short scope summary (20+ characters).</div>
-                      </div>
-                      <div class="col-12 cta-row">
-                        <button class="btn btn-solid" type="submit">Send Inquiry</button>
-                        <a class="btn btn-accent" href="#pricing">View Pricing</a>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-
-                <div class="surface p-4 mt-3 d-none" data-form-success>
-                  <h2 class="h4 mb-2">Message queued.</h2>
-                  <p class="mb-0">
-                    This is a static demo form. Your details are validated on the client. Replace the submission handler
-                    with your preferred backend when ready.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-5">
-                <div class="surface p-4 text-start h-100">
-                  <h2 class="h3 mb-4 text-center">Contact Info</h2>
-                  <div class="mb-4">
-                    <div class="d-flex align-items-center gap-3 mb-3">
-                      <div class="icon-btn" style="width: 32px; height: 32px; font-size: 14px;"><i class="bi bi-geo-alt"></i></div>
-                      <div class="text-center">
-                        <div class="small text-muted mono uppercase">Address</div>
-                        <div class="small">123 Stage Left Way, London, UK</div>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-3 mb-3">
-                      <div class="icon-btn" style="width: 32px; height: 32px; font-size: 14px;"><i class="bi bi-telephone"></i></div>
-                      <div class="text-center">
-                        <div class="small text-muted mono uppercase">Phone</div>
-                        <div class="small">+44 20 7946 0000</div>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <div class="icon-btn" style="width: 32px; height: 32px; font-size: 14px;"><i class="bi bi-envelope"></i></div>
-                      <div class="text-center">
-                        <div class="small text-muted mono uppercase">Email</div>
-                        <div class="small">hello@luxframe.example</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h3 class="h5 mb-3 mt-4">Location</h3>
-                  <div class="ratio ratio-16x9 rounded overflow-hidden mb-4" style="max-height: 200px;">
-                    <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.905020791717!2d-0.12775829999999997!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c3222a41df%3A0x1d90f76cfcc03e65!2sLondon%2C%20UK!5e0!3m2!1sen!2sus!4v1712246400000!5m2!1sen!2sus" 
-                      style="border:0;" 
-                      allowfullscreen="" 
-                      loading="lazy" 
-                      referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                  </div>
-
-                  <h3 class="h5 mb-2 mt-4">What to include</h3>
-                  <ul class="small mb-0 text-muted">
-                    <li>Venue/studio specs and rig list</li>
-                    <li>Rehearsal/tech calendar</li>
-                    <li>Director’s references</li>
-                    <li>Any required deliverables</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container container-max">
-        <div class="footer-grid">
-          <div>
-            <div class="footer-brand">
-              <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
-            </div>
-            <p class="mt-3 mb-0">
-              Lighting design for theatre and film—built from cue discipline, story clarity, and control of shadow.
-            </p>
-            <div class="social-row" aria-label="Social links">
-              <a href="coming-soon.html" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
-              <a href="coming-soon.html" aria-label="Vimeo"><i class="bi bi-vimeo" aria-hidden="true"></i></a>
-              <a href="coming-soon.html" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div>
-            <div class="footer-title">Productions</div>
-            <div class="footer-links">
-              <a href="#home">Production Reel</a>
-              <a href="#home">Cue Sheet</a>
-              <a href="#home-2">Behind the Rig</a>
-              <a href="#services">Design Services</a>
-              <a href="#pricing">Rates</a>
-            </div>
-          </div>
-          <div>
-            <div class="footer-title">Resources</div>
-            <div class="footer-links">
-              <a href="#blog">Blog</a>
-              <a href="#service-details">Workflow</a>
-              <a href="#about">Timeline</a>
-              <a href="#contact">Contact</a>
-            </div>
-          </div>
-          <div>
-            <div class="footer-title">Newsletter</div>
-            <form class="needs-validation" novalidate>
-              <label class="form-label" for="newsletterEmail">Monthly cue notes, no spam.</label>
-              <div class="newsletter-form">
-                <input
-                  class="form-control"
-                  id="newsletterEmail"
-                  name="email"
-                  type="email"
-                />
-                <button class="btn btn-solid" type="submit">Sign Up</button>
-              </div>
-              <div class="invalid-feedback mt-2">Enter a valid email to subscribe.</div>
-            </form>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <div>© 2026 LuxFrame. All rights reserved.</div>
-          <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">
-            <i class="bi bi-arrow-up" aria-hidden="true"></i>
-          </button>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    <section id="home-2" class="snap-section">
+      <div class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Behind the Rig</div>
+            <h1 class="mb-2">Before the cue fires, the rig is already telling the story.</h1>
+            <p class="mb-0">
+              Equipment choices, plot logic, and programming discipline—so when the moment arrives, the light lands
+              exactly where it should.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tight">
+        <div class="container container-max">
+          <div class="section-title text-start mb-5">
+            <div class="kicker justify-content-start">Equipment Showcase</div>
+            <h2>Tools of the mood.</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="surface p-0 overflow-hidden">
+                <div class="ratio ratio-16x9">
+                  <img src="assets/images/moving-head.png" alt="Moving Heads Lighting" class="object-fit-cover">
+                </div>
+                <div class="p-4">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-gear-wide-connected text-accent"></i>
+                    <h3 class="h5 mb-0">Moving Heads</h3>
+                  </div>
+                  <p class="text-muted small">Fast focus shifts, sculpted beams, and precise transitions between looks.
+                  </p>
+                  <div class="mono small opacity-50">Example: Martin MAC / Robe</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="surface p-0 overflow-hidden">
+                <div class="ratio ratio-16x9">
+                  <img src="assets/images/ellipsoidal.png" alt="Ellipsoidals Lighting" class="object-fit-cover">
+                </div>
+                <div class="p-4">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-bounding-box-circles text-accent"></i>
+                    <h3 class="h5 mb-0">Ellipsoidals</h3>
+                  </div>
+                  <p class="text-muted small">Hard-edged story light with shutters, gobos, and sharp intent.</p>
+                  <div class="mono small opacity-50">Example: ETC Source Four</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="surface p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-btn" aria-hidden="true"><i class="bi bi-brightness-high"></i></div>
+                  <div>
+                    <h3 class="h5 mb-2">LED Wash</h3>
+                    <p class="text-muted small mb-2">A wide palette without muddying the scene—clean saturation,
+                      controlled softness.</p>
+                    <div class="mono small opacity-50">Example: Chauvet / ETC</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="surface p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-btn" aria-hidden="true"><i class="bi bi-cloud-haze2"></i></div>
+                  <div>
+                    <h3 class="h5 mb-2">Haze &amp; Atmospherics</h3>
+                    <p class="text-muted small mb-2">Air as a canvas—beam readability, depth separation, and subtle
+                      bloom.</p>
+                    <div class="mono small opacity-50">Example: DF-50 / MDG</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section position-relative overflow-hidden">
+        <div class="light-beam"></div>
+        <div class="container container-max">
+          <div class="section-title text-start mb-5">
+            <div class="kicker justify-content-start">Process</div>
+            <h2>From script to stage.</h2>
+          </div>
+
+          <div class="row g-0 align-items-stretch border-start border-accent border-2 ms-3 ms-lg-0">
+            <div class="col-12 col-lg-6">
+              <div class="p-4 pt-0 ps-5 position-relative">
+                <div class="position-absolute start-0 top-0 translate-middle-x bg-accent rounded-circle"
+                  style="width:12px; height:12px; margin-left:-1px;"></div>
+                <div class="kicker mb-2 text-accent">Phase 1</div>
+                <h3 class="h4">Read the Script</h3>
+                <p class="text-muted">
+                  Identify the emotional beats: silence, reveal, confrontation, relief—then define the lighting
+                  vocabulary that supports them.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="p-4 pt-0 ps-5 position-relative">
+                <div class="position-absolute start-0 top-0 translate-middle-x bg-accent rounded-circle"
+                  style="width:12px; height:12px; margin-left:-1px;"></div>
+                <div class="kicker mb-2 text-accent">Phase 2</div>
+                <h3 class="h4">Design the Plot</h3>
+                <p class="text-muted">
+                  Build focus architecture: angles, zones, and practical logic. Every fixture has a narrative job.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="p-4 pt-0 ps-5 position-relative">
+                <div class="position-absolute start-0 top-0 translate-middle-x bg-accent rounded-circle"
+                  style="width:12px; height:12px; margin-left:-1px;"></div>
+                <div class="kicker mb-2 text-accent">Phase 3</div>
+                <h3 class="h4">Program the Cues</h3>
+                <p class="text-muted">
+                  Timing is writing. Fade curves and snap decisions become rhythm—clean programming, no surprises.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="p-4 pt-0 ps-5 position-relative">
+                <div class="position-absolute start-0 top-0 translate-middle-x bg-accent rounded-circle"
+                  style="width:12px; height:12px; margin-left:-1px;"></div>
+                <div class="kicker mb-2 text-accent">Phase 4</div>
+                <h3 class="h4">Tech Rehearsal</h3>
+                <p class="text-muted">
+                  Refine focus, protect skin tones, eliminate spill, and lock the final cue stack with the director’s
+                  intent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="snap-section">
+      <div class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Production Reel Strip</div>
+            <h2>Frames from the booth. Cuts from the set.</h2>
+          </div>
+        </div>
+        <div class="container-fluid px-3 px-md-4">
+          <div class="reel-wrapper">
+            <button class="reel-nav prev" aria-label="Previous frame" data-reel-prev>
+              <i class="bi bi-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="reel" aria-label="Production frames" data-production-reel>
+              <article class="frame">
+                <div class="ratio ratio-16x9 mb-3">
+                  <img class="frame-img m-0" src="https://picsum.photos/id/10/800/450" alt="Blackbird production" />
+                </div>
+                <h3 class="h5">Blackbird</h3>
+                <div class="small opacity-50">Riverview Playhouse • 2026</div>
+                <div class="role text-accent">Lighting Designer</div>
+                <div class="meta mb-0 p-0 bg-transparent border-0">
+                  <span class="badge-genre small"><i class="bi bi-mask" aria-hidden="true"></i>Drama</span>
+                  <span class="badge-genre small"><i class="bi bi-lightbulb" aria-hidden="true"></i>45° Cross-key</span>
+                </div>
+              </article>
+              <article class="frame">
+                <div class="ratio ratio-16x9 mb-3">
+                  <img class="frame-img m-0" src="https://picsum.photos/id/11/800/450"
+                    alt="Neon Aftermath production" />
+                </div>
+                <h3 class="h5">Neon Aftermath</h3>
+                <div class="small opacity-50">Short Film • 2025</div>
+                <div class="role text-accent">Gaffer / Lighting Design</div>
+                <div class="meta mb-0 p-0 bg-transparent border-0">
+                  <span class="badge-genre small"><i class="bi bi-camera-reels" aria-hidden="true"></i>Horror
+                    Film</span>
+                  <span class="badge-genre small"><i class="bi bi-droplet" aria-hidden="true"></i>Haze Layer</span>
+                </div>
+              </article>
+              <article class="frame">
+                <div class="ratio ratio-16x9 mb-3">
+                  <img class="frame-img m-0" src="https://picsum.photos/id/12/800/450"
+                    alt="The Glass Orchard production" />
+                </div>
+                <h3 class="h5">The Glass Orchard</h3>
+                <div class="small opacity-50">Eastline Theatre • 2024</div>
+                <div class="role text-accent">LD Associate</div>
+                <div class="meta mb-0 p-0 bg-transparent border-0">
+                  <span class="badge-genre small"><i class="bi bi-music-note-beamed"
+                      aria-hidden="true"></i>Musical</span>
+                  <span class="badge-genre small"><i class="bi bi-sunrise" aria-hidden="true"></i>Warm Wash</span>
+                </div>
+              </article>
+              <article class="frame">
+                <div class="ratio ratio-16x9 mb-3">
+                  <img class="frame-img m-0" src="https://picsum.photos/id/13/800/450" alt="Salt & Static production" />
+                </div>
+                <h3 class="h5">Salt &amp; Static</h3>
+                <div class="small opacity-50">Studio Set • 2026</div>
+                <div class="role text-accent">Lighting Designer</div>
+                <div class="meta mb-0 p-0 bg-transparent border-0">
+                  <span class="badge-genre small"><i class="bi bi-film" aria-hidden="true"></i>Drama Film</span>
+                  <span class="badge-genre small"><i class="bi bi-circle-half" aria-hidden="true"></i>Negative
+                    Fill</span>
+                </div>
+              </article>
+            </div>
+            <button class="reel-nav next" aria-label="Next frame" data-reel-next>
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tight" id="productions">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">The Cue Sheet</div>
+            <h2>Precision you can feel.</h2>
+          </div>
+
+          <div class="table-responsive">
+            <table class="cue-sheet mono" aria-label="Cue sheet">
+              <thead>
+                <tr>
+                  <th scope="col">Cue #</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Intensity</th>
+                  <th scope="col">Color Temp</th>
+                  <th scope="col">Fade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12</td>
+                  <td>Sunrise over Act 2 balcony</td>
+                  <td>42%</td>
+                  <td>5600K</td>
+                  <td>3s</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Door crack — thin blade across the floor</td>
+                  <td>18%</td>
+                  <td>3200K</td>
+                  <td>0s</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>Memory wash — soft top + haze bloom</td>
+                  <td>36%</td>
+                  <td>3200K</td>
+                  <td>5s</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>Cyc shift — horizon edge to silhouette</td>
+                  <td>55%</td>
+                  <td>5600K</td>
+                  <td>2s</td>
+                </tr>
+                <tr>
+                  <td>44</td>
+                  <td>Interrogation — hard sidelight, falloff kept</td>
+                  <td>62%</td>
+                  <td>5600K</td>
+                  <td>1s</td>
+                </tr>
+                <tr>
+                  <td>58</td>
+                  <td>Final blackout — breath held, no spill</td>
+                  <td>0%</td>
+                  <td>—</td>
+                  <td>0s</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="section position-relative overflow-hidden">
+        <div class="light-beam right"></div>
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Light vs. No Light</div>
+            <h2 class="glow-text">The difference is not brighter. It’s deliberate.</h2>
+          </div>
+
+          <div class="row g-4 mt-4">
+            <!-- Without Design Card -->
+            <div class="col-12 col-lg-6">
+              <article class="surface d-flex flex-column p-0 overflow-hidden h-100 border-opacity-10">
+                <div
+                  class="p-3 bg-black bg-opacity-5 d-flex justify-content-between align-items-center border-bottom border-secondary border-opacity-10">
+                  <span class="mono small opacity-50 tracking-widest uppercase">State: 00_FLAT</span>
+                  <span class="badge border border-secondary border-opacity-50 text-muted mono px-2 py-1">RAW
+                    STATE</span>
+                </div>
+                <div class="ratio ratio-16x9 grayscale opacity-50">
+                  <img src="assets/images/scene-after.png" alt="Scene without design" class="object-fit-cover">
+                </div>
+                <div class="p-4 flex-grow-1">
+                  <div class="kicker justify-content-start mb-2" style="font-size: 0.7rem;">Analysis</div>
+                  <p class="text-muted small mb-0">
+                    Even illumination throughout the frame. Faces are visible, but the eye has no guide. The narrative
+                    is swallowed by ambient light and shares the same value.
+                  </p>
+                  <div class="mt-4 pt-3 border-top border-secondary border-opacity-10 mono small opacity-50">
+                    OUTPUT: <span class="text-uppercase">Readable but forgettable</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- With LuxFrame Design Card -->
+            <div class="col-12 col-lg-6">
+              <article
+                class="surface d-flex flex-column p-0 overflow-hidden h-100 border-accent border-opacity-40 shadow-lg">
+                <div
+                  class="p-3 bg-accent bg-opacity-10 d-flex justify-content-between align-items-center border-bottom border-accent border-opacity-20">
+                  <span class="mono small text-accent tracking-widest uppercase">State: 01_DESIGNED</span>
+                  <span class="badge bg-accent text-black mono px-2 py-1">LUXFRAME ACTIVE</span>
+                </div>
+                <div class="ratio ratio-16x9">
+                  <img src="assets/images/scene-after.png" alt="Scene with LuxFrame Design" class="object-fit-cover">
+                  <div class="position-absolute inset-0 bg-accent bg-opacity-10 pointer-events-none"></div>
+                </div>
+                <div class="p-4 flex-grow-1 bg-accent bg-opacity-5">
+                  <div class="kicker justify-content-start mb-2 text-accent" style="font-size: 0.7rem;">Outcome</div>
+                  <p class="small mb-0">
+                    Intentional contrast carves the lead actor from the environment. Negative fill protects the subtext.
+                    The audience is guided to the emotional core.
+                  </p>
+                  <div class="mt-4 pt-3 border-top border-accent border-opacity-20 mono small text-accent">
+                    OUTPUT: <span class="text-uppercase">Story-driven emotional focus</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tight">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Director Testimonials</div>
+            <h2>Two notes from the table.</h2>
+          </div>
+
+          <div class="director-notes">
+            <article class="note">
+              <p class="mb-2">
+                <em>“The cues read like dialogue. The lighting didn’t decorate the story—it delivered it.”</em>
+              </p>
+              <div class="sig">Mara Elgin • Blackbird</div>
+            </article>
+            <article class="note">
+              <p class="mb-2">
+                <em>“LuxFrame found the fear between the lines: hard edges, soft falloff, and a perfect blackout.”</em>
+              </p>
+              <div class="sig">Jon Kaito • Neon Aftermath</div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="section cta-band">
+        <div class="container container-max">
+          <h2>Every stage is a blank canvas. Let’s paint it with light.</h2>
+          <p>
+            Email
+            <a href="mailto:hello@luxframe.example">hello@luxframe.example</a>
+            or share your dates and venue details.
+          </p>
+          <div class="cta-row mt-3">
+            <a class="btn btn-solid" href="#contact">Discuss Your Production</a>
+            <a class="btn btn-accent" href="#home-2">Behind the Rig</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="snap-section position-relative overflow-hidden">
+      <div class="light-beam"></div>
+      <div class="section">
+        <div class="container container-max">
+          <div class="section-title text-start">
+            <div class="kicker justify-content-start">About LuxFrame</div>
+            <h1 class="mb-2 glow-text">Story first. Fixtures second.</h1>
+            <p class="mb-0 fs-5 text-muted">
+              A decade of theatre cueing and film lighting—translating scripts into light, shadow, and timing.
+            </p>
+          </div>
+
+          <div class="row g-4 mt-4">
+            <div class="col-12 col-lg-4">
+              <div class="surface p-4 h-100">
+                <h2 class="h4 mb-3">The Philosophy</h2>
+                <p>
+                  I don’t just "light the stage." I design the focus. Every cue should feel like a line of
+                  dialogue—necessary, rhythmic, and intentional.
+                </p>
+                <p class="mb-0">
+                  Whether it’s a high-contrast horror short or a minimalist stage drama, the goal is the same:
+                  clarity for the eye, emotion for the soul.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-8">
+              <div class="surface p-4 h-100">
+                <h2 class="h4 mb-3">Timeline</h2>
+                <div class="timeline" aria-label="Professional timeline">
+                  <div class="timeline-item">
+                    <div class="year">2026</div>
+                    <div class="content">
+                      <h3 class="h5 mb-1">Lead Designer — Blackbird</h3>
+                      <p class="mb-0">Riverview Playhouse. Full production design and programming.</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="year">2025</div>
+                    <div class="content">
+                      <h3 class="h5 mb-1">Gaffer / LD — Neon Aftermath</h3>
+                      <p class="mb-0">Short film. Established the high-saturation, low-key visual language.</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="content">
+                      <h3 class="h5 mb-1">Associate LD — The Glass Orchard</h3>
+                      <p class="mb-0">Eastline Theatre. Supported the primary designer on a 150+ cue musical.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tight">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Core Skills</div>
+            <h2>Control over every photon.</h2>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="surface p-3 text-center h-100">
+                <div class="h3 mb-1">98%</div>
+                <div class="small mono">Cue Accuracy</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="surface p-3 text-center h-100">
+                <div class="h3 mb-1">10+</div>
+                <div class="small mono">Film Credits</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="surface p-3 text-center h-100">
+                <div class="h3 mb-1">450+</div>
+                <div class="small mono">Cues Written</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="surface p-3 text-center h-100">
+                <div class="h3 mb-1">100%</div>
+                <div class="small mono">Venue Safety</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section cta-band">
+        <div class="container container-max">
+          <h2>Ready to define the look of your next show?</h2>
+          <div class="cta-row mt-3">
+            <a class="btn btn-solid" href="#contact">Discuss Your Production</a>
+            <a class="btn btn-accent" href="#services">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="snap-section position-relative overflow-hidden">
+      <div class="light-beam right"></div>
+      <div class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Design Services</div>
+            <h1 class="mb-2 glow-text">One discipline. Two worlds.</h1>
+            <p class="mb-0 fs-5 text-muted">
+              Tailored lighting solutions for the stage and the screen, built with technical precision and story
+              clarity.
+            </p>
+          </div>
+
+          <div class="row g-3 mt-4">
+            <div class="col-12 col-md-6">
+              <div class="surface p-4 h-100">
+                <div class="icon-btn mb-3" aria-hidden="true"><i class="bi bi-mask"></i></div>
+                <h2 class="h4 mb-3">Theatre Design</h2>
+                <p class="mb-4">
+                  From script analysis to the final blackout. Full plot design, cue programming, and tech
+                  rehearsal management for dramas, musicals, and dance.
+                </p>
+                <ul class="mb-4">
+                  <li>Full Vectorworks plots</li>
+                  <li>EOS / GrandMA programming</li>
+                  <li>Focus management</li>
+                </ul>
+                <a class="btn btn-accent" href="#service-details">View Workflow</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="surface p-4 h-100">
+                <div class="icon-btn mb-3" aria-hidden="true"><i class="bi bi-camera-reels"></i></div>
+                <h2 class="h4 mb-3">Film Lighting / Gaffer</h2>
+                <p class="mb-4">
+                  Shaping the frame. Managing the grip and electric crew to deliver the DP’s vision with speed,
+                  safety, and narrative consistency and also best looks.
+                </p>
+                <ul class="mb-4">
+                  <li>Lighting plans & lists</li>
+                  <li>On-set crew management</li>
+                  <li>Atmospherics & practicals</li>
+                </ul>
+                <a class="btn btn-accent" href="#service-details">View Workflow</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tight">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker"><i class="bi bi-lightning-charge-fill me-1"></i>The Process</div>
+            <h2><i class="bi bi-gear-wide-connected me-3 text-accent"></i>How we build the look.</h2>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <div class="surface p-4 h-100 text-center">
+                <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+                  <div class="icon-feature mb-0" style="width: 42px; height: 42px; font-size: 18px;" aria-hidden="true">
+                    <i class="bi bi-eye-fill"></i>
+                  </div>
+                  <h3 class="h5 mb-0">1. Concept</h3>
+                </div>
+                <p class="mb-0 text-muted">Script reading, reference gathering, and establishing the emotional palette.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="surface p-4 h-100 text-center">
+                <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+                  <div class="icon-feature mb-0" style="width: 42px; height: 42px; font-size: 18px;" aria-hidden="true">
+                    <i class="bi bi-vector-pen"></i>
+                  </div>
+                  <h3 class="h5 mb-0">2. Plot</h3>
+                </div>
+                <p class="mb-0 text-muted">Technical design: angles, fixture choices, and power distribution plans.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="surface p-4 h-100 text-center">
+                <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+                  <div class="icon-feature mb-0" style="width: 42px; height: 42px; font-size: 18px;" aria-hidden="true">
+                    <i class="bi bi-cpu-fill"></i>
+                  </div>
+                  <h3 class="h5 mb-0">3. Tech</h3>
+                </div>
+                <p class="mb-0 text-muted">Programming, focus, and refinement during rehearsals to lock the final show.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="service-details" class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Workflow</div>
+            <h2 class="mb-2">From plot to premiere.</h2>
+            <p class="mb-0">A transparent, repeatable process to ensure your production stays on schedule and on budget.
+            </p>
+          </div>
+
+          <div class="row g-4 mt-4">
+            <div class="col-12 col-lg-8">
+              <article class="surface p-4">
+                <h3 class="h4 mb-3">The Stage Design Workflow</h3>
+                <p>For theatrical productions, the process is built around the tech schedule. We don't waste time on
+                  stage.</p>
+
+                <div class="workflow-steps mt-4">
+                  <div class="workflow-step mb-4">
+                    <div class="h5 kicker mb-2">Step 1: Plotting</div>
+                    <p>Full Vectorworks design including instrument schedules, patch lists, and power distribution
+                      requirements. This ensures the hang is fast and the crew knows exactly what goes where.</p>
+                  </div>
+                  <div class="workflow-step mb-4">
+                    <div class="h5 kicker mb-2">Step 2: Focus</div>
+                    <p>Managing the focus session with precision. Every fixture is carves to its purpose—no spill, no
+                      glare, just clear narrative intent.</p>
+                  </div>
+                  <div class="workflow-step mb-0">
+                    <div class="h5 kicker mb-2">Step 3: Programming</div>
+                    <p>Writing the cue stack. I program with a focus on timing and "breath," ensuring the light moves
+                      with the actors, not just alongside them.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <aside class="surface p-4">
+                <h3 class="h5 mb-3">Deliverables</h3>
+                <ul class="footer-links list-unstyled">
+                  <li><i class="bi bi-file-earmark-pdf me-2"></i>PDF Light Plot</li>
+                  <li><i class="bi bi-file-earmark-spreadsheet me-2"></i>Instrument Schedule</li>
+                  <li><i class="bi bi-file-earmark-code me-2"></i>Console Showfile</li>
+                  <li><i class="bi bi-file-earmark-text me-2"></i>Cue Synopsis</li>
+                </ul>
+                <div class="mt-4">
+                  <a class="btn btn-solid w-100" href="#contact">Start a Project</a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section cta-band">
+        <div class="container container-max">
+          <h2>Looking for specific rates or a project quote?</h2>
+          <div class="cta-row mt-3">
+            <a class="btn btn-solid" href="#pricing">View Rates</a>
+            <a class="btn btn-accent" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="snap-section">
+      <div class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Pricing & Rates</div>
+            <h1 class="mb-2">Clear rates. Professional results.</h1>
+            <p class="mb-0">
+              Transparent pricing for theatre and film projects. All rates include standard insurance and basic kit.
+            </p>
+          </div>
+
+          <div class="row g-3 mt-4">
+            <div class="col-12 col-lg-4">
+              <div class="surface p-4 h-100">
+                <div class="h5 kicker mb-2">Theatre</div>
+                <h2 class="h3 mb-3">Project Fee</h2>
+                <p class="mb-4">Complete design from plot to tech. Best for stage productions with set runs.</p>
+                <div class="h2 mb-4">From $1,200</div>
+                <ul class="mb-4">
+                  <li>Full Vectorworks plot</li>
+                  <li>30 hrs Tech / Rehearsal</li>
+                  <li>Cue list documentation</li>
+                </ul>
+                <a class="btn btn-solid w-100" href="#contact">Get Quote</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="surface p-4 h-100 border-accent">
+                <div class="h5 kicker mb-2">Film / Gaffer</div>
+                <h2 class="h3 mb-3">Day Rate</h2>
+                <p class="mb-4">Professional lighting management for commercial or narrative film sets.</p>
+                <div class="h2 mb-4">$550 <small class="h6">/ 10hr</small></div>
+                <ul class="mb-4">
+                  <li>Grip & Electric oversight</li>
+                  <li>Basic expendables included</li>
+                  <li>Pre-pro consultation</li>
+                </ul>
+                <a class="btn btn-solid w-100" href="#contact">Book Dates</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="surface p-4 h-100">
+                <div class="h5 kicker mb-2">Consultation</div>
+                <h2 class="h3 mb-3">Hourly</h2>
+                <p class="mb-4">Plot reviews, equipment specs, or console programming training sessions.</p>
+                <div class="h2 mb-4">$75 <small class="h6">/ hr</small></div>
+                <ul class="mb-4">
+                  <li>2 hr minimum booking</li>
+                  <li>Remote or on-site</li>
+                  <li>Technical documentation</li>
+                </ul>
+                <a class="btn btn-solid w-100" href="#contact">Hire Hourly</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tight">
+        <div class="container container-max">
+          <div class="surface p-4">
+            <h3 class="h5 mb-3">Notes on Booking</h3>
+            <p class="mb-0">
+              Travel outside the metropolitan area is billed at cost. For multi-week theatre runs or feature
+              films, custom package rates are available. Standard payment terms: 50% deposit to lock dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="snap-section">
+      <div class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">The Blog</div>
+            <h1 class="mb-2">Notes from the console.</h1>
+            <p class="mb-0">Practical advice on theatre cues, film lighting, and the business of freelance design.</p>
+          </div>
+
+          <div class="row g-3 mt-4">
+            <div class="col-12 col-md-6">
+              <article class="post-row h-100">
+                <img src="https://picsum.photos/id/1/800/450" alt="Lighting console" class="post-image">
+                <div class="post-content">
+                  <div class="meta">Technique • 6 min</div>
+                  <h2 class="h4">Fade Curves: The difference between “smooth” and “alive”</h2>
+                  <p>How linear fades flatten emotion—and why your crossfades should breathe like the scene.</p>
+                  <a class="btn btn-accent" href="#blog-details">Read Article</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6">
+              <article class="post-row h-100">
+                <img src="https://picsum.photos/id/2/800/450" alt="Haze in theater" class="post-image">
+                <div class="post-content">
+                  <div class="meta">Gear Reviews • 5 min</div>
+                  <h2 class="h4">Haze, not smoke: beam readability without choking the stage</h2>
+                  <p>Atmospherics as a precision tool—placement, density, and how to keep faces clean.</p>
+                  <a class="btn btn-accent" href="#blog-details">Read Article</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6">
+              <article class="post-row h-100">
+                <img src="https://picsum.photos/id/3/800/450" alt="Stage crew working" class="post-image">
+                <div class="post-content">
+                  <div class="meta">Business • 4 min</div>
+                  <h2 class="h4">Focus Notes That Crews Actually Use</h2>
+                  <p>Stop writing novels in your focus charts. A guide to concise, actionable crew communication.</p>
+                  <a class="btn btn-accent" href="#blog-details">Read Article</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6">
+              <article class="post-row h-100">
+                <img src="https://picsum.photos/id/4/800/450" alt="Cinematic lighting" class="post-image">
+                <div class="post-content">
+                  <div class="meta">Technique • 7 min</div>
+                  <h2 class="h4">Negative Fill: Depth on the sets of low-budget shorts</h2>
+                  <p>You don't need more lights; you need more darkness. Controlling falloff in tight spaces.</p>
+                  <a class="btn btn-accent" href="#blog-details">Read Article</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="blog-details" class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Technique</div>
+            <h2 class="mb-2">Fade Curves: The difference between “smooth” and “alive”</h2>
+            <p class="mb-0">A practical lighting note for theatre cues and film transitions.</p>
+          </div>
+
+          <div class="row g-3 mt-4">
+            <div class="col-12 col-lg-8">
+              <article class="surface p-4">
+                <p class="mono mb-3">Read time: 6 minutes</p>
+                <p>
+                  A fade is not decoration. A fade is the timing of belief: when the audience decides a change is
+                  happening, when they accept it, and when they forget it ever changed.
+                </p>
+                <h2 class="h4 mt-4">1) The cue has a purpose</h2>
+                <p>
+                  If the cue is a reveal, the rise must feel intentional. If it’s a memory, the change must feel like
+                  it came from inside the scene—not from the console.
+                </p>
+                <h2 class="h4 mt-4">2) The audience tracks contrast, not intensity</h2>
+                <p>
+                  Percentage values are meaningless without context. The eye follows edges: what gets protected, what
+                  gets removed, and what stays still.
+                </p>
+
+                <div class="mt-4">
+                  <div class="kicker mb-2">Mini Cue Sheet</div>
+                  <div class="table-responsive">
+                    <table class="cue-sheet mono" aria-label="Mini cue sheet">
+                      <thead>
+                        <tr>
+                          <th scope="col">Cue #</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">Intensity</th>
+                          <th scope="col">Color Temp</th>
+                          <th scope="col">Fade</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>19</td>
+                          <td>Door crack — thin blade across the floor</td>
+                          <td>18%</td>
+                          <td>3200K</td>
+                          <td>0s</td>
+                        </tr>
+                        <tr>
+                          <td>27</td>
+                          <td>Memory wash — soft top + haze bloom</td>
+                          <td>36%</td>
+                          <td>3200K</td>
+                          <td>5s</td>
+                        </tr>
+                        <tr>
+                          <td>31</td>
+                          <td>Cyc shift — horizon edge to silhouette</td>
+                          <td>55%</td>
+                          <td>5600K</td>
+                          <td>2s</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <h2 class="h4 mt-4">3) Write fades like dialogue</h2>
+                <p class="mb-0">
+                  A “smooth” fade is often just a long one. An “alive” fade respects the actor’s timing and the
+                  director’s breath. Start with the beat. Then decide whether the change should be noticed.
+                </p>
+              </article>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <aside class="surface p-4">
+                <div class="footer-title">Topics</div>
+                <div class="footer-links">
+                  <a href="#blog">Theatre</a>
+                  <a href="#blog">Film</a>
+                  <a href="#blog">Technique</a>
+                  <a href="#blog">Gear Reviews</a>
+                </div>
+
+                <div class="footer-title mt-4">Recent</div>
+                <div class="footer-links">
+                  <a href="#blog-details">Focus Notes That Crews Actually Use</a>
+                  <a href="#blog-details">Negative Fill: Depth on set</a>
+                  <a href="#blog-details">Haze, not smoke</a>
+                </div>
+
+                <div class="mt-4">
+                  <a class="btn btn-solid w-100" href="#contact">Discuss Your Production</a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="snap-section">
+      <div class="section">
+        <div class="container container-max">
+          <div class="section-title">
+            <div class="kicker">Contact</div>
+            <h1 class="mb-2">Send the details. I’ll build the looks.</h1>
+            <p class="mb-0">
+              Email
+              <a href="mailto:hello@luxframe.example">hello@luxframe.example</a>
+              or use the form with venue and dates.
+            </p>
+          </div>
+
+          <div class="row g-3 mt-4">
+            <div class="col-12 col-lg-7">
+              <div class="surface p-4 text-start">
+                <h2 class="h3 mb-4 text-center">Message Us</h2>
+                <form class="needs-validation" data-demo-submit novalidate>
+                  <div class="row g-3">
+                    <div class="col-12 position-relative">
+                      <label class="form-label" for="name">Name</label>
+                      <input class="form-control" id="name" name="name" required minlength="2" />
+                      <div class="invalid-tooltip">Enter your name.</div>
+                    </div>
+                    <div class="col-12 position-relative">
+                      <label class="form-label" for="email">Email</label>
+                      <input class="form-control" id="email" name="email" type="email" required />
+                      <div class="invalid-tooltip">Enter a valid email address.</div>
+                    </div>
+                    <div class="col-12 position-relative">
+                      <label class="form-label" for="productionType">Production Type</label>
+                      <select class="form-select" id="productionType" name="productionType" required>
+                        <option value="" selected disabled>Select…</option>
+                        <option>Theatre — Drama</option>
+                        <option>Theatre — Musical</option>
+                        <option>Theatre — Dance</option>
+                        <option>Film — Short</option>
+                        <option>Film — Feature</option>
+                        <option>Event / Festival</option>
+                      </select>
+                      <div class="invalid-tooltip">Choose a production type.</div>
+                    </div>
+                    <div class="col-12 position-relative">
+                      <label class="form-label" for="venue">Venue / Studio</label>
+                      <input class="form-control" id="venue" name="venue" required minlength="2" />
+                      <div class="invalid-tooltip">Add the venue or studio name.</div>
+                    </div>
+                    <div class="col-12 position-relative">
+                      <label class="form-label" for="dates">Dates</label>
+                      <input class="form-control" id="dates" name="dates" required
+                        placeholder="e.g., Tech: May 12–14 • Run: May 20–Jun 2" />
+                      <div class="invalid-tooltip">Add your key dates.</div>
+                    </div>
+                    <div class="col-12 position-relative">
+                      <label class="form-label" for="message">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="5" required
+                        minlength="20"></textarea>
+                      <div class="invalid-tooltip">Give a short scope summary (20+ characters).</div>
+                    </div>
+                    <div class="col-12 cta-row">
+                      <button class="btn btn-solid" type="submit">Send Inquiry</button>
+                      <a class="btn btn-accent" href="#pricing">View Pricing</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="surface p-4 mt-3 d-none" data-form-success>
+                <h2 class="h4 mb-2">Message queued.</h2>
+                <p class="mb-0">
+                  This is a static demo form. Your details are validated on the client. Replace the submission handler
+                  with your preferred backend when ready.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <div class="surface p-4 text-start h-100">
+                <h2 class="h3 mb-4 text-center">Contact Info</h2>
+                <div class="mb-4">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="icon-btn" style="width: 32px; height: 32px; font-size: 14px;"><i
+                        class="bi bi-geo-alt"></i></div>
+                    <div class="text-center">
+                      <div class="small text-muted mono uppercase">Address</div>
+                      <div class="small">123 Stage Left Way, London, UK</div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="icon-btn" style="width: 32px; height: 32px; font-size: 14px;"><i
+                        class="bi bi-telephone"></i></div>
+                    <div class="text-center">
+                      <div class="small text-muted mono uppercase">Phone</div>
+                      <div class="small">+44 20 7946 0000</div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="icon-btn" style="width: 32px; height: 32px; font-size: 14px;"><i
+                        class="bi bi-envelope"></i></div>
+                    <div class="text-center">
+                      <div class="small text-muted mono uppercase">Email</div>
+                      <div class="small">hello@luxframe.example</div>
+                    </div>
+                  </div>
+                </div>
+
+                <h3 class="h5 mb-3 mt-4">Location</h3>
+                <div class="ratio ratio-16x9 rounded overflow-hidden mb-4" style="max-height: 200px;">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.905020791717!2d-0.12775829999999997!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c3222a41df%3A0x1d90f76cfcc03e65!2sLondon%2C%20UK!5e0!3m2!1sen!2sus!4v1712246400000!5m2!1sen!2sus"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+
+                <h3 class="h5 mb-2 mt-4">What to include</h3>
+                <ul class="small mb-0 text-muted">
+                  <li>Venue/studio specs and rig list</li>
+                  <li>Rehearsal/tech calendar</li>
+                  <li>Director’s references</li>
+                  <li>Any required deliverables</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer position-relative overflow-hidden">
+    <div class="haze-backdrop"></div>
+    <div class="container container-max">
+      <div class="row g-5 pb-5">
+        <div class="col-12 col-lg-5">
+          <div class="footer-brand mb-4">
+            <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
+          </div>
+          <p class="fs-5 mb-4 text-muted" style="max-width: 400px;">
+            Lighting design for theatre and film—built from cue discipline, story clarity, and control of shadow.
+          </p>
+          <div class="social-row d-flex gap-3" aria-label="Social links">
+            <a href="coming-soon.html" class="icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="coming-soon.html" class="icon-btn" aria-label="Vimeo"><i class="bi bi-vimeo"></i></a>
+            <a href="coming-soon.html" class="icon-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <div class="footer-title kicker mb-4">Productions</div>
+          <div class="footer-links d-flex flex-column gap-2">
+            <a href="#home">Production Reel</a>
+            <a href="#productions">Cue Sheet</a>
+            <a href="#home-2">Behind the Rig</a>
+            <a href="#services">Services</a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-title kicker mb-4">Resources</div>
+          <div class="footer-links d-flex flex-column gap-2">
+            <a href="#blog">Blog</a>
+            <a href="#service-details">Workflow</a>
+            <a href="#about">Timeline</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="footer-title kicker mb-4">Rates</div>
+          <a class="btn btn-accent w-100 btn-sm" href="#pricing">View Pricing</a>
+        </div>
+      </div>
+
+      <div
+        class="footer-bottom pt-4 border-top border-secondary border-opacity-10 d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div class="mono small opacity-50">© 2026 LuxFrame // SHAPING FOCUS</div>
+        <div class="mono small opacity-50">PLOT_VER_CUE_27.4</div>
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">
+          <i class="bi bi-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

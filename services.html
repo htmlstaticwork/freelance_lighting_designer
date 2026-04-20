@@ -110,12 +110,14 @@
     </div>
 
     <main id="main">
-      <section class="section">
+      <section class="section position-relative overflow-hidden">
+        <div class="haze-backdrop"></div>
+        <div class="light-beam"></div>
         <div class="container container-max">
-          <div class="section-title">
-            <div class="kicker">Services</div>
-            <h1 class="mb-2">Design services built like a cue stack.</h1>
-            <p class="mb-0">
+          <div class="section-title text-start">
+            <div class="kicker justify-content-start">Services</div>
+            <h1 class="mb-2 glow-text">Design services built like a cue stack.</h1>
+            <p class="mb-0 fs-5 text-muted">
               Clear deliverables, clean documentation, and light that serves story—not noise.
             </p>
           </div>
@@ -179,64 +181,52 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer position-relative overflow-hidden">
+      <div class="haze-backdrop"></div>
       <div class="container container-max">
-        <div class="footer-grid">
-          <div>
-            <div class="footer-brand">
+        <div class="row g-5 pb-5">
+          <div class="col-12 col-lg-5">
+            <div class="footer-brand mb-4">
               <img src="assets/images/luxframe-logo.svg" alt="LuxFrame" />
             </div>
-            <p class="mt-3 mb-0">
+            <p class="fs-5 mb-4 text-muted" style="max-width: 400px;">
               Lighting design for theatre and film—built from cue discipline, story clarity, and control of shadow.
             </p>
-            <div class="social-row" aria-label="Social links">
-              <a href="coming-soon.html" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
-              <a href="coming-soon.html" aria-label="Vimeo"><i class="bi bi-vimeo" aria-hidden="true"></i></a>
-              <a href="coming-soon.html" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <div class="social-row d-flex gap-3" aria-label="Social links">
+              <a href="coming-soon.html" class="icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="coming-soon.html" class="icon-btn" aria-label="Vimeo"><i class="bi bi-vimeo"></i></a>
+              <a href="coming-soon.html" class="icon-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
-          <div>
-            <div class="footer-title">Productions</div>
-            <div class="footer-links">
+          <div class="col-6 col-lg-2 offset-lg-1">
+            <div class="footer-title kicker mb-4">Productions</div>
+            <div class="footer-links d-flex flex-column gap-2">
               <a href="index.html#portfolio">Production Reel</a>
               <a href="index.html#productions">Cue Sheet</a>
-              <a href="services.html">Design Services</a>
-              <a href="pricing.html">Rates</a>
+              <a href="index.html#home-2">Behind the Rig</a>
+              <a href="services.html">Services</a>
             </div>
           </div>
-          <div>
-            <div class="footer-title">Resources</div>
-            <div class="footer-links">
+          <div class="col-6 col-lg-2">
+            <div class="footer-title kicker mb-4">Resources</div>
+            <div class="footer-links d-flex flex-column gap-2">
               <a href="blog.html">Blog</a>
               <a href="service-details.html">Workflow</a>
               <a href="about.html">Timeline</a>
               <a href="contact.html">Contact</a>
             </div>
           </div>
-          <div>
-            <div class="footer-title">Newsletter</div>
-            <form class="needs-validation" novalidate>
-              <label class="form-label" for="newsletterEmail">Monthly cue notes, no spam.</label>
-              <div class="newsletter-form">
-                <input
-                  class="form-control"
-                  id="newsletterEmail"
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="you@example.com"
-                />
-                <button class="btn btn-solid" type="submit">Sign Up</button>
-              </div>
-              <div class="invalid-feedback mt-2">Enter a valid email to subscribe.</div>
-            </form>
+          <div class="col-12 col-lg-2">
+            <div class="footer-title kicker mb-4">Rates</div>
+            <a class="btn btn-accent w-100 btn-sm" href="pricing.html">View Pricing</a>
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <div>© 2026 LuxFrame. All rights reserved.</div>
+        <div class="footer-bottom pt-4 border-top border-secondary border-opacity-10 d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <div class="mono small opacity-50">© 2026 LuxFrame // SHAPING FOCUS</div>
+          <div class="mono small opacity-50">PLOT_VER_CUE_27.4</div>
           <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">
-            <i class="bi bi-arrow-up" aria-hidden="true"></i>
+            <i class="bi bi-arrow-up"></i>
           </button>
         </div>
       </div>
