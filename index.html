@@ -62,9 +62,8 @@
           </nav>
 
           <div class="header-actions">
-            <div class="d-1100-flex align-items-center gap-2">
-              <a class="auth-link" href="login.html">Login</a>
-              <a class="auth-link" href="register.html">Register</a>
+            <div class="d-1100-flex align-items-center">
+              <a class="btn btn-accent btn-sm" href="contact.html">Reach Me</a>
             </div>
             <button class="icon-btn d-1100-inline-flex" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
               <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
@@ -101,8 +100,7 @@
           <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
         </nav>
         <div class="offcanvas-actions">
-          <a class="chip-btn" href="login.html">Login</a>
-          <a class="chip-btn" href="register.html">Register</a>
+          <a class="btn btn-accent w-100 mb-3" href="contact.html">Reach Me</a>
           <button class="icon-btn" type="button" data-action="toggle-combined" aria-label="Toggle Theme and Accent">
             <i class="bi bi-moon-stars fs-5" aria-hidden="true"></i>
           </button>
@@ -259,67 +257,75 @@
             </div>
           </div>
           <div class="container-fluid px-3 px-md-4">
-            <div class="reel" aria-label="Production frames">
-              <article class="frame">
-                <img class="frame-img" src="https://picsum.photos/id/10/800/450" alt="Blackbird production" />
-                <h3>Blackbird</h3>
-                <div class="small">Riverview Playhouse • 2026</div>
-                <div class="role">Lighting Designer</div>
-                <div class="meta">
-                  <span class="badge-genre"><i class="bi bi-mask" aria-hidden="true"></i>Drama</span>
-                  <span class="badge-genre"><i class="bi bi-lightbulb" aria-hidden="true"></i>45° Cross-key</span>
-                </div>
-              </article>
-              <article class="frame">
-                <img class="frame-img" src="https://picsum.photos/id/11/800/450" alt="Neon Aftermath production" />
-                <h3>Neon Aftermath</h3>
-                <div class="small">Short Film • 2025</div>
-                <div class="role">Gaffer / Lighting Design</div>
-                <div class="meta">
-                  <span class="badge-genre"><i class="bi bi-camera-reels" aria-hidden="true"></i>Horror Film</span>
-                  <span class="badge-genre"><i class="bi bi-droplet" aria-hidden="true"></i>Haze Layer</span>
-                </div>
-              </article>
-              <article class="frame">
-                <img class="frame-img" src="https://picsum.photos/id/12/800/450" alt="The Glass Orchard production" />
-                <h3>The Glass Orchard</h3>
-                <div class="small">Eastline Theatre • 2024</div>
-                <div class="role">LD Associate</div>
-                <div class="meta">
-                  <span class="badge-genre"><i class="bi bi-music-note-beamed" aria-hidden="true"></i>Musical</span>
-                  <span class="badge-genre"><i class="bi bi-sunrise" aria-hidden="true"></i>Warm Wash</span>
-                </div>
-              </article>
-              <article class="frame">
-                <img class="frame-img" src="https://picsum.photos/id/13/800/450" alt="Salt & Static production" />
-                <h3>Salt &amp; Static</h3>
-                <div class="small">Studio Set • 2026</div>
-                <div class="role">Lighting Designer</div>
-                <div class="meta">
-                  <span class="badge-genre"><i class="bi bi-film" aria-hidden="true"></i>Drama Film</span>
-                  <span class="badge-genre"><i class="bi bi-circle-half" aria-hidden="true"></i>Negative Fill</span>
-                </div>
-              </article>
-              <article class="frame">
-                <img class="frame-img" src="https://picsum.photos/id/14/800/450" alt="Broken Compass production" />
-                <h3>Broken Compass</h3>
-                <div class="small">City Fringe • 2025</div>
-                <div class="role">Full Production LD</div>
-                <div class="meta">
-                  <span class="badge-genre"><i class="bi bi-person-walking" aria-hidden="true"></i>Dance</span>
-                  <span class="badge-genre"><i class="bi bi-stars" aria-hidden="true"></i>Cyc Texture</span>
-                </div>
-              </article>
-              <article class="frame">
-                <img class="frame-img" src="https://picsum.photos/id/15/800/450" alt="Night Market production" />
-                <h3>Night Market</h3>
-                <div class="small">Music Video • 2024</div>
-                <div class="role">Lighting Designer</div>
-                <div class="meta">
-                  <span class="badge-genre"><i class="bi bi-vinyl" aria-hidden="true"></i>Music Video</span>
-                  <span class="badge-genre"><i class="bi bi-brightness-high" aria-hidden="true"></i>Practical Pops</span>
-                </div>
-              </article>
+            <div class="reel-wrapper">
+              <button class="reel-nav prev" aria-label="Previous frame" data-reel-prev>
+                <i class="bi bi-chevron-left" aria-hidden="true"></i>
+              </button>
+              <div class="reel" aria-label="Production frames" data-production-reel>
+                <article class="frame">
+                  <img class="frame-img" src="https://picsum.photos/id/10/800/450" alt="Blackbird production" />
+                  <h3>Blackbird</h3>
+                  <div class="small">Riverview Playhouse • 2026</div>
+                  <div class="role">Lighting Designer</div>
+                  <div class="meta">
+                    <span class="badge-genre"><i class="bi bi-mask" aria-hidden="true"></i>Drama</span>
+                    <span class="badge-genre"><i class="bi bi-lightbulb" aria-hidden="true"></i>45° Cross-key</span>
+                  </div>
+                </article>
+                <article class="frame">
+                  <img class="frame-img" src="https://picsum.photos/id/11/800/450" alt="Neon Aftermath production" />
+                  <h3>Neon Aftermath</h3>
+                  <div class="small">Short Film • 2025</div>
+                  <div class="role">Gaffer / Lighting Design</div>
+                  <div class="meta">
+                    <span class="badge-genre"><i class="bi bi-camera-reels" aria-hidden="true"></i>Horror Film</span>
+                    <span class="badge-genre"><i class="bi bi-droplet" aria-hidden="true"></i>Haze Layer</span>
+                  </div>
+                </article>
+                <article class="frame">
+                  <img class="frame-img" src="https://picsum.photos/id/12/800/450" alt="The Glass Orchard production" />
+                  <h3>The Glass Orchard</h3>
+                  <div class="small">Eastline Theatre • 2024</div>
+                  <div class="role">LD Associate</div>
+                  <div class="meta">
+                    <span class="badge-genre"><i class="bi bi-music-note-beamed" aria-hidden="true"></i>Musical</span>
+                    <span class="badge-genre"><i class="bi bi-sunrise" aria-hidden="true"></i>Warm Wash</span>
+                  </div>
+                </article>
+                <article class="frame">
+                  <img class="frame-img" src="https://picsum.photos/id/13/800/450" alt="Salt & Static production" />
+                  <h3>Salt &amp; Static</h3>
+                  <div class="small">Studio Set • 2026</div>
+                  <div class="role">Lighting Designer</div>
+                  <div class="meta">
+                    <span class="badge-genre"><i class="bi bi-film" aria-hidden="true"></i>Drama Film</span>
+                    <span class="badge-genre"><i class="bi bi-circle-half" aria-hidden="true"></i>Negative Fill</span>
+                  </div>
+                </article>
+                <article class="frame">
+                  <img class="frame-img" src="https://picsum.photos/id/14/800/450" alt="Broken Compass production" />
+                  <h3>Broken Compass</h3>
+                  <div class="small">City Fringe • 2025</div>
+                  <div class="role">Full Production LD</div>
+                  <div class="meta">
+                    <span class="badge-genre"><i class="bi bi-person-walking" aria-hidden="true"></i>Dance</span>
+                    <span class="badge-genre"><i class="bi bi-stars" aria-hidden="true"></i>Cyc Texture</span>
+                  </div>
+                </article>
+                <article class="frame">
+                  <img class="frame-img" src="https://picsum.photos/id/15/800/450" alt="Night Market production" />
+                  <h3>Night Market</h3>
+                  <div class="small">Music Video • 2024</div>
+                  <div class="role">Lighting Designer</div>
+                  <div class="meta">
+                    <span class="badge-genre"><i class="bi bi-vinyl" aria-hidden="true"></i>Music Video</span>
+                    <span class="badge-genre"><i class="bi bi-brightness-high" aria-hidden="true"></i>Practical Pops</span>
+                  </div>
+                </article>
+              </div>
+              <button class="reel-nav next" aria-label="Next frame" data-reel-next>
+                <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              </button>
             </div>
           </div>
         </div>

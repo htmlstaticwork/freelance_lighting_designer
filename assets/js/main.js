@@ -309,6 +309,41 @@
     sections.forEach((section) => observer.observe(section));
   };
 
+  const wireProductionReelNav = () => {
+    const reel = qs("[data-production-reel]");
+    const prevBtn = qs("[data-reel-prev]");
+    const nextBtn = qs("[data-reel-next]");
+
+    if (!reel || !prevBtn || !nextBtn) return;
+
+    const scrollAmount = () => {
+      const firstFrame = reel.querySelector(".frame");
+      if (!firstFrame) return 400;
+      const style = window.getComputedStyle(reel);
+      const gap = parseInt(style.gap) || 16;
+      return firstFrame.offsetWidth + gap;
+    };
+
+    const updateButtons = () => {
+      const isStart = reel.scrollLeft <= 10;
+      const isEnd = reel.scrollLeft + reel.clientWidth >= reel.scrollWidth - 10;
+      prevBtn.disabled = isStart;
+      nextBtn.disabled = isEnd;
+    };
+
+    prevBtn.addEventListener("click", () => {
+      reel.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", () => {
+      reel.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+
+    reel.addEventListener("scroll", updateButtons);
+    window.addEventListener("resize", updateButtons);
+    updateButtons();
+  };
+
   const wireOffcanvasHiding = () => {
     const offcanvas = qs("#navOffcanvas");
     if (!offcanvas) return;
@@ -333,5 +368,6 @@
     wireScrollSpy();
     wireSmoothScroll();
     wireOffcanvasHiding();
+    wireProductionReelNav();
   });
 })();
